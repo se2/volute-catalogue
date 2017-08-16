@@ -1,0 +1,34 @@
+{
+  "name": "catalogue",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~4.0.0-alpha.6",
+    "modernizr": "~2.8.1",
+    "slick-carousel": "slick.js#^1.7.1",
+    "isotope": "^3.0.4",
+    "font-awesome": "fontawesome#^4.7.0",
+    "animate.css": "^3.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
+  "overrides": {
+    "isotope": {
+      "main": [
+        "js/item.js",
+        "js/layout-mode.js",
+        "js/isotope.js",
+        "js/layout-modes/vertical.js",
+        "js/layout-modes/fit-rows.js",
+        "js/layout-modes/masonry.js"
+      ]
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    }
+  }
+}

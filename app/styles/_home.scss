@@ -1,0 +1,98 @@
+$transition: .2s;
+
+.home-slider {
+
+  &--item {
+    width: 100%;
+    height: 600px;
+
+    &-inner {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.tools-category {
+  padding-left: 15px;
+}
+
+a.tools-link {
+  font-size: 27px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+
+  i {
+    margin-left: 10px;
+    font-size: 36px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// Tools
+.tools-row {
+  margin: 0 -2px 55px;
+}
+
+li.tool {
+  float: left;
+  height: 300px;
+  padding: 0 2px;
+  transition: all $transition;
+  cursor: pointer;
+
+  .tool--inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .tool--details {
+    background: linear-gradient(to top, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 100%);
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+    strong,
+    span {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  // tool hover effect
+  ul.tools:hover {
+    li {
+      transform: translateX(-25%);
+    }
+    li:hover {
+      transform: scale(1.5);
+      transition-duration: $transition/1.1;
+    }
+    li:hover ~ li {
+      transform: translateX(25%);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import 'var';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #141414;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 300ms;
+
+  &:hover {
+    color: #8896b4;
+    text-decoration: none;
+  }
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header,
+.footer {
+  margin-bottom: 30px;
+}
+
+.w-20p {
+  width: 20%;
+}
+
+.w-10p {
+  width: 10%;
+}
+
+.orange-bg {
+  background-color: $orange;
+}
+
+.purple-bg {
+  background-color: $purple;
+}
+
+.yellow-bg {
+  background-color: $yellow;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+.teal-bg {
+  background-color: $teal;
+}
+
+.green-bg {
+  background-color: $green;
+}
+
+// Slick override
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 25px;
+  z-index: 1;
+}
+
+.slick-dots {
+  li {
+    button:before {
+      color: #fff;
+    }
+  }
+}

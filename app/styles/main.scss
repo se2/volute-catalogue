@@ -1,0 +1,17 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+// plugins
+@import 'slick-theme';
+
+// elements
+@import 'var';
+@import 'global';
+@import 'hover-effect';
+
+@import 'header';
+@import 'footer';
+@import 'home';
