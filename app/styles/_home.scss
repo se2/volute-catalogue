@@ -24,6 +24,7 @@
 
 .tools-category {
   padding-left: 15px;
+  padding-top: 40px;
 }
 
 a.tools-link {
@@ -77,10 +78,15 @@ li.tool {
     background-color: rgba(228,228,228,.75);
     color: $gray;
 
-    strong,
+    p,
     span {
       display: block;
     }
+
+    p {
+      color: #cbcbcb;
+    }
+
   }
 }
 

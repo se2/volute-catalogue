@@ -1,0 +1,779 @@
+[
+{
+  "id": 12,
+  "name": "Slides",
+  "description": "The Slides Tool offers users the ability to view a PDF slideshow.",
+  "creationDate": "2016-07-12 03:41:54 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-slides/images/slides-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-slides",
+  "display-preferences":
+  {
+    "display-name": "Slides"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 13,
+  "name": "Announcements",
+  "description": "The Announcements Tool allows users to notify their audience of important information.",
+  "creationDate": "2016-07-12 04:19:52 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-announcements/images/announcements-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-announcements",
+  "display-preferences":
+  {
+    "display-name": "Announcements"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 4,
+    "name": "Notifications"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 14,
+  "name": "Tasks",
+  "description": "The Tasks Tool allows users to create and manage a list of items that require action.",
+  "creationDate": "2016-07-12 04:20:56 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-task/images/task-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-task",
+  "display-preferences":
+  {
+    "display-name": "Tasks"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 15,
+  "name": "Directory",
+  "description": "The Directory Tool displays a list of users and their basic contact information.",
+  "creationDate": "2016-07-12 04:21:20 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-directory/images/directory-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-directory",
+  "display-preferences":
+  {
+    "display-name": "Directory"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 16,
+  "name": "Video",
+  "description": "The Video Tool allows users to play a video or select from a playlist of videos.",
+  "creationDate": "2016-07-12 04:21:37 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-video/images/video-list-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-video",
+  "display-preferences":
+  {
+    "display-name": "Video"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 17,
+  "name": "Notes",
+  "description": "Users can use this Tool to capture their study observations or comments at any point within a Program or within associated Mashups.",
+  "creationDate": "2016-07-12 04:21:53 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-notes/images/notes-icon.png",
+  "displayOnMobile": false,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-notes",
+  "display-preferences":
+  {
+    "display-name": "Notes"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": "null",
+  "author": "null",
+  "purchased": true
+},
+{
+  "id": 18,
+  "name": "Discussion",
+  "description": "The Discussion Tool allows individuals and groups to chat and discuss various topics.",
+  "creationDate": "2016-07-12 04:22:07 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-discussion/images/discussion-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-discussion",
+  "display-preferences":
+  {
+    "display-name": "Discussion"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 3,
+    "name": "Collaboration"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 20,
+  "name": "Portfolio",
+  "description": "The Portfolio Tool contains each user’s contact information, a brief biography, and links to their social media profiles.",
+  "creationDate": "2016-07-12 04:22:36 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-profile/images/new-profile-icon.png",
+  "displayOnMobile": false,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-profile",
+  "display-preferences":
+  {
+    "display-name": "Portfolio"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 21,
+  "name": "Content Integration",
+  "description": "The Content Integration Tool provides users with the ability to upload or download files.",
+  "creationDate": "2016-07-12 04:22:51 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-content-integration/images/content-integration-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-content-integration",
+  "display-preferences":
+  {
+    "display-name": "Content Integration"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 22,
+  "name": "Calendar",
+  "description": "The Calendar Tool allows users to manage, schedule and view events.",
+  "creationDate": "2016-07-12 04:23:31 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-calendar/images/calendar-icon.png",
+  "displayOnMobile": false,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-calendar",
+  "display-preferences":
+  {
+    "display-name": "Calendar"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 4,
+    "name": "Notifications"
+  }],
+  "appUUID": "null",
+  "author": "null",
+  "purchased": true
+},
+{
+  "id": 23,
+  "name": "Rich Text Editor",
+  "description": "The Rich Text Editor Tool offers the ability to design and manage custom rich text content including images and URLs.",
+  "creationDate": "2016-07-12 04:24:06 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-text-image/images/volute-app-text-image.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-text-image",
+  "display-preferences":
+  {
+    "display-name": "Rich Text Editor"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 31,
+  "name": "Portal",
+  "description": "The Portal Tool offers users the ability to load external content into a tool.",
+  "creationDate": "2017-01-15 03:33:35 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-iframe/images/iframe-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "clynch@volute.co",
+    "user":
+    {
+      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
+      "email": "clynch@volute.co",
+      "firstName": "Christopher",
+      "lastName": "Lynch",
+      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
+      "lastLogin": "2017-08-17T18:58:45"
+    },
+    "account":
+    {
+      "id": 19,
+      "name": "Volute",
+      "lrsDashboardId": null
+    },
+    "cohort": ""
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-iframe",
+  "display-preferences":
+  {
+    "display-name": "Portal"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 32,
+  "name": "Reader",
+  "description": "The Reader Tool allows users to read PDF documents.",
+  "creationDate": "2017-01-18 08:43:22 AM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-reader/images/reader-icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-reader",
+  "display-preferences":
+  {
+    "display-name": "Reader"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 33,
+  "name": "Learning Design",
+  "description": "The Learning Design Tool allows collaboration between your team and Volute’s Learning Design team.",
+  "creationDate": "2017-02-13 06:26:41 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-id/images/instructional-design-icons.png",
+  "creator":
+  {
+    "email": "clynch@volute.co",
+    "user":
+    {
+      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
+      "email": "clynch@volute.co",
+      "firstName": "Christopher",
+      "lastName": "Lynch",
+      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
+      "lastLogin": "2017-08-17T18:58:45"
+    },
+    "account":
+    {
+      "id": 19,
+      "name": "Volute",
+      "lrsDashboardId": null
+    },
+    "cohort": ""
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-id",
+  "display-preferences":
+  {
+    "display-name": "Learning Design"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 334,
+  "name": "Biography",
+  "description": "The Biography Tool allows users add a photo, biography, and social media links for any individual.",
+  "creationDate": "2016-10-05 04:41:48 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-biography/images/portfolio.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-biography",
+  "display-preferences":
+  {
+    "display-name": "Biography"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 1003,
+  "name": "Journey",
+  "description": "My Journey provides a single location that lists all of the relevant learning Activities within a Program.",
+  "creationDate": "2016-09-04 02:43:32 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-journey/icon.png",
+  "displayOnMobile": true,
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-journey",
+  "display-preferences":
+  {
+    "display-name": "My Journey"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 10,
+    "name": "Learning Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+},
+{
+  "id": 1010,
+  "name": "Assessment",
+  "description": "The Assessment Tool integrates with the Qualtrics API to give you powerful survey and assessment capabilities.",
+  "creationDate": "2017-05-01 04:38:27 PM",
+  "isPublic": true,
+  "type": "app",
+  "icon-image": "../volute-app-assessment/images/assessment-icon.png",
+  "displayOnMobile": false,
+  "creator":
+  {
+    "email": "clynch@volute.co",
+    "user":
+    {
+      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
+      "email": "clynch@volute.co",
+      "firstName": "Christopher",
+      "lastName": "Lynch",
+      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
+      "lastLogin": "2017-08-17T18:58:45"
+    },
+    "account":
+    {
+      "id": 19,
+      "name": "Volute",
+      "lrsDashboardId": null
+    },
+    "cohort": ""
+  },
+  "isCompletable": false,
+  "rootPath": "volute-app-assessment",
+  "display-preferences":
+  {
+    "display-name": "Assessments"
+  },
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "appUUID": null,
+  "author": null,
+  "purchased": true
+}]
