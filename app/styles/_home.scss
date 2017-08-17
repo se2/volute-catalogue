@@ -1,4 +1,4 @@
-$transition: .2s;
+@import 'var';
 
 .home-slider {
 
@@ -51,8 +51,10 @@ li.tool {
   float: left;
   height: 300px;
   padding: 0 2px;
-  transition: all $transition;
+  transition: all $transition ease-in-out 0s;
   cursor: pointer;
+  z-index: 999;
+  position: relative;
 
   .tool--inner {
     width: 100%;
@@ -60,19 +62,20 @@ li.tool {
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
   }
 
   .tool--details {
-    background: linear-gradient(to top, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(bottom, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 100%);
-    height: 100px;
+    height: 80px;
     bottom: 0;
+    left: 0;
     position: absolute;
     width: 100%;
     padding-left: 10px;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
+    background-color: rgba(228,228,228,.75);
+    color: $gray;
 
     strong,
     span {
@@ -81,23 +84,115 @@ li.tool {
   }
 }
 
+// Tool expand infobox
+.tool--infobox {
+  width: 100vw;
+  background-color: $gray;
+  margin-bottom: 55px;
+  transition: all $transition ease-in-out 0s;
+  height: 0;
+  overflow: hidden;
+
+  &__active {
+    height: 500px;
+    .tool--infobox-slider {
+      &:after {
+        background: rgba(20,20,20,.2);
+      }
+    }
+    .tool--infobox-slider--item {
+      height: 500px;
+    }
+  }
+
+  &-metadata {
+    padding-left: 45px;
+
+    i.fa {
+      font-size: 27px;
+    }
+
+    .tool--infobox-rating {
+      color: $red;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    z-index: 2;
+
+    &:hover {
+      color: $red;
+    }
+
+    i.fa {
+      font-size: 48px;
+    }
+  }
+}
+
+.tool--infobox-slider {
+  width: 100%;
+  height: 100%;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: background $transition ease-in-out 0s;
+  }
+
+  &:before {
+    // background: radial-gradient(ellipse at center, rgba(20,20,20,0) 0%,rgba(20,20,20,1) 100%,rgba(20,20,20,1) 100%);
+    background: linear-gradient(to right, rgba(20,20,20,1) 10%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(20,20,20,1) 10%, rgba(0,0,0,0) 100%);
+  }
+
+  &:after {
+   // background: linear-gradient(to top, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 20%);
+   // background: -webkit-linear-gradient(bottom, rgba(20,20,20,1) 0%, rgba(0,0,0,0) 20%);
+   background: rgba(20,20,20,1);
+  }
+
+  &--item {
+    width: 100%;
+    height: 0;
+    transition: height $transition ease-in-out 0s;
+
+    &-inner {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 @media screen and (min-width: 769px) {
   // tool hover effect
-  ul.tools:hover {
+  ul.tools.tools__hover:hover {
     li {
-      transform: translateX(-25%);
+      transform: translateX(-12.5%);
     }
     // first tool
     li:first-child:hover {
-      transform: translateX(25%) scale(1.5);
+      transform: translateX(12.5%) scale(1.25);
       transition-duration: $transition/1.1;
     }
     li:first-child:hover ~ li {
-      transform: translateX(50%);
+      transform: translateX(25%);
     }
     // last tool
     // li:last-child:hover {
-    //   transform: translateX(-25%) scale(1.5);
+    //   transform: translateX(-12.5%) scale(1.25);
     //   transition-duration: $transition/1.1;
     // }
     // li:last-child:hover ~ li {
@@ -105,11 +200,11 @@ li.tool {
     // }
     // middle tools
     li:hover {
-      transform: scale(1.5);
+      transform: scale(1.25);
       transition-duration: $transition/1.1;
     }
     li:hover ~ li {
-      transform: translateX(25%);
+      transform: translateX(12.5%);
     }
   }
 }
