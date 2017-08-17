@@ -87,6 +87,23 @@ li.tool {
     li {
       transform: translateX(-25%);
     }
+    // first tool
+    li:first-child:hover {
+      transform: translateX(25%) scale(1.5);
+      transition-duration: $transition/1.1;
+    }
+    li:first-child:hover ~ li {
+      transform: translateX(50%);
+    }
+    // last tool
+    // li:last-child:hover {
+    //   transform: translateX(-25%) scale(1.5);
+    //   transition-duration: $transition/1.1;
+    // }
+    // li:last-child:hover ~ li {
+    //   transform: translateX(-50%);
+    // }
+    // middle tools
     li:hover {
       transform: scale(1.5);
       transition-duration: $transition/1.1;
