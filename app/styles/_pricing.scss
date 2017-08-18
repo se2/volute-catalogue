@@ -1,13 +1,17 @@
 @import 'var';
 
+.pricing,
+.pricing--left,
+.pricing--right {
+  height: calc(100vh - 100px);
+
+  @media (max-width: $xxl - 1px) {
+    height: auto;
+    overflow: hidden;
+  }
+}
+
 .pricing {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
   background-color: white;
 
   &--footer {
@@ -23,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 15px;
 
     &:before {
       content: " ";
@@ -36,10 +41,152 @@
       right: 0;
       top: 0;
     }
+
+    @media (max-width: $iPadPro - 1px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $sm - 1px) {
+      height: 80px;
+    }
+  }
+
+  &--intro {
+    h1 {
+      font-size: 54px;
+
+      @media (max-width: $iPadPro - 1px) {
+        font-size: 48px;
+      }
+
+      @media (max-width: $md - 1px) {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 27px;
+      color: #767171;
+
+      @media (max-width: $iPadPro - 1px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: $md - 1px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &--left,
+  &--right {
+    float: left;
+  }
+
+  &--left {
+    padding-left: 15px;
+    padding-right: 120px;
+    padding-top: 20vh;
+    width: 33.333333%;
+
+    @media (max-width: $xxl - 1px) {
+      width: 100%;
+      padding: 50px 15px 0;
+      text-align: center;
+    }
+
+    @media (max-width: $md - 1px) {
+      padding-top: 25px;
+    }
+  }
+
+  &--right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    width: 66.666667%;
+
+    .row {
+      width: 100%;
+    }
+
+    @media (max-width: $xxl - 1px) {
+      width: 100%;
+      padding: 75px 15px;
+    }
+
+    @media (max-width: $md - 1px) {
+      padding-top: 25px;
+    }
   }
 
   .row {
     align-items: center;
+  }
+
+  .flex-pay,
+  .tier-pay,
+  .custom-pay {
+    background-color: #fff;
+
+    @media (max-width: $iPadPro - 1px) {
+      padding: 0;
+    }
+
+    @media (max-width: $md - 1px) {
+      &.column {
+        padding-bottom: 25px;
+      }
+    }
+  }
+
+  .tier-pay {
+
+    @media (min-width: $md) {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    z-index: 1;
+    padding: 0;
+
+    &--table {
+      color: #767171;
+
+      tr {
+        border-bottom: 1px solid rgba(20,20,20,.05);
+      }
+
+      td {
+        padding: 5px 20px;
+
+        @media (max-width: $iPadPro - 1px) {
+          padding: 5px 10px;
+        }
+      }
+
+      tbody td {
+        font-size: 22px;
+
+        @media (max-width: $iPadPro - 1px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .pricing--footer {
+      color: $pricing-best;
+    }
+
+    .title {
+      background: $pricing-best;
+    }
   }
 }
 
@@ -67,22 +214,6 @@
   overflow: hidden;
   border: 1px solid rgba(0,0,0,.25);
 
-  &.best {
-    // -webkit-transform: scale(1.1);
-    // -moz-transform: scale(1.1);
-    // -ms-transform: scale(1.1);
-    // -o-transform: scale(1.1);
-    // transform: scale(1.1);
-
-    .pricing--footer {
-      color: $pricing-best;
-    }
-
-    .title {
-      background: $pricing-best;
-    }
-  }
-
   .features {
     text-align: center;
     display: -webkit-flex;
@@ -92,7 +223,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 350px;
+    height: 330px;
+    padding: 0 30px;
 
     h1,
     h2,
@@ -105,12 +237,38 @@
       display: block;
     }
 
+    h3 {
+      @media (max-width: $iPadPro - 1px) {
+        font-size: 18px;
+      }
+    }
+
     span {
       font-size: 20px;
+
+      @media (max-width: $iPadPro - 1px) {
+        font-size: 16px;
+      }
     }
 
     p {
       color: #cbcbcb;
+    }
+
+    i.fa {
+      font-size: 100px;
+
+      @media (max-width: $iPadPro - 1px) {
+        font-size: 75px;
+      }
+    }
+
+    @media (max-width: $iPadPro - 1px) {
+      height: 270px;
+    }
+
+    @media (max-width: $sm - 1px) {
+      height: 240px;
     }
   }
 
@@ -121,6 +279,10 @@
     color: white;
     background-color: $pricing;
     text-align: center;
+
+    @media (max-width: $iPadPro - 1px) {
+      font-size: 27px;
+    }
   }
 
   .subtitle {
@@ -150,12 +312,21 @@
       right: 0;
       bottom: 0;
     }
+
+    @media (max-width: $iPadPro - 1px) {
+      font-size: 16px;
+      height: 75px;
+    }
   }
 
   .price {
     color: #7f8bff;
     font-size: 48px;
     font-weight: 600;
+
+    @media (max-width: $iPadPro - 1px) {
+      font-size: 36px;
+    }
   }
 
 }

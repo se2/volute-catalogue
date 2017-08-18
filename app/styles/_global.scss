@@ -45,11 +45,6 @@ a {
   padding-right: 0;
 }
 
-.header,
-.footer {
-  margin-bottom: 30px;
-}
-
 .w-20p {
   width: 20%;
 }
@@ -80,6 +75,58 @@ a {
 
 .green-bg {
   background-color: $green;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.purple {
+  color: $purple;
+}
+
+.teal {
+  color: $teal;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.orange {
+  color: $orange;
+}
+
+.gray {
+  color: $gray;
+}
+
+.red {
+  color: $red;
+}
+
+.pricing-color {
+  color: $pricing;
+}
+
+.pricing-best-color {
+  color: $pricing-best;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 // Slick override

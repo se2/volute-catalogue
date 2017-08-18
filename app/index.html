@@ -38,10 +38,19 @@
       </div>
 
       <div class="pricing">
-        <div class="col-md-4"></div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class='column col-md-4'>
+        <div class="pricing--left pricing--intro">
+          <h1 class="animated fadeInDown pricing-color">Our Pricing</h1>
+          <br>
+          <p class="animated fadeInDown">
+            It is a long established fact that a reader will be distracted by the readable content of a page
+            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it look like
+            readable English.
+          </p>
+        </div>
+        <div class="pricing--right">
+          <div class="row no-margin">
+            <div class='column col-xs-12 col-md-4 flex-pay'>
               <div class='pricing-table'>
                 <h1 class='title'><strong>Flex Pay</strong></h1>
                 <h3 class="subtitle">
@@ -59,17 +68,50 @@
                 </div>
               </div>
             </div>
-            <div class='column col-md-4'>
-              <div class='pricing-table best'>
+            <div class='column col-xs-12 col-md-4 tier-pay'>
+              <div class='pricing-table'>
                 <h1 class='title'><strong>Tier Pay</strong></h1>
                 <h3 class="subtitle">
                   More users, more savings.
                 </h3>
                 <div class="features">
                   <div class="features--content center-abs">
-                    <div class="price">$9.90</div>
-                    <span>per month / active user</span>
-                    <p>Active users are defined as users that have logged in once per month</p>
+                    <table class="tier-pay--table">
+                      <thead>
+                        <tr>
+                          <td>
+                            <h3 class="no-margin">
+                              <strong class="pricing-color">Users:</strong>
+                            </h3>
+                            <p>(Up to)</p>
+                          </td>
+                          <td>
+                            <h3 class="no-margin">
+                              <strong class="pricing-color">Savings:</strong>
+                            </h3>
+                            <p>(Up to)</p>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>500</td>
+                          <td class="pricing-color"><strong>30%</strong></td>
+                        </tr>
+                        <tr>
+                          <td>1,500</td>
+                          <td class="pricing-color"><strong>35%</strong></td>
+                        </tr>
+                        <tr>
+                          <td>2,500</td>
+                          <td class="pricing-color"><strong>40%</strong></td>
+                        </tr>
+                        <tr>
+                          <td>5000</td>
+                          <td class="pricing-color"><strong>50%</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <div class="pricing--footer">
@@ -77,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class='column col-md-4'>
+            <div class='column col-xs-12 col-md-4 custom-pay'>
               <div class='pricing-table'>
                 <h1 class='title'><strong>Custom</strong></h1>
                 <h3 class="subtitle">
@@ -85,9 +127,9 @@
                 </h3>
                 <div class="features">
                   <div class="features--content center-abs">
-                    <div class="price">$9.90</div>
-                    <span>per month / active user</span>
-                    <p>Active users are defined as users that have logged in once per month</p>
+                    <i class="fa fa-comments-o pricing-color" aria-hidden="true"></i>
+                    <div class="price">Let's Talk.</div>
+                    <span>Contact us to design a pricing structure that works for you.</span>
                   </div>
                 </div>
                 <div class="pricing--footer">
