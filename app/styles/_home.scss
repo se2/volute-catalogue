@@ -182,7 +182,7 @@ li.tool {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $lg) {
   // tool hover effect
   ul.tools.tools__hover:hover {
     li {
