@@ -6,7 +6,7 @@
 
 body,
 html {
-  background-color: #141414;
+  background-color: $black;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,10 +34,6 @@ a {
     color: #8896b4;
     text-decoration: none;
   }
-}
-
-::-webkit-scrollbar {
-	display: none;
 }
 
 .container-fluid {
@@ -75,6 +71,10 @@ a {
 
 .green-bg {
   background-color: $green;
+}
+
+.volute-bg {
+  background-color: $pricing;
 }
 
 .yellow {
@@ -147,3 +147,14 @@ a {
     }
   }
 }
+
+.center-abs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+

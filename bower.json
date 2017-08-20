@@ -8,7 +8,8 @@
     "isotope": "^3.0.4",
     "font-awesome": "fontawesome#^4.7.0",
     "animate.css": "^3.5.2",
-    "smoothscroll": "^0.3.6"
+    "smoothscroll": "^0.3.6",
+    "font-awesome-animation": "^0.0.10"
   },
   "devDependencies": {
     "chai": "^4.1.1",

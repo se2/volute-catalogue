@@ -1,0 +1,1366 @@
+{
+  "id": 12,
+  "name": "Slides",
+  "version": "1.0.0",
+  "app-id": "UUID7934",
+  "date-creation": "2016-06-21",
+  "last-modified": "",
+  "resources":
+  {
+    "user-guide": "http://www.volute.education/userguide#/Slides"
+  },
+  "categories": [
+  {
+    "id": 2,
+    "name": "Content Management"
+  }],
+  "description": "The Slides Tool offers users the ability to view a PDF slideshow.",
+  "private": false,
+  "draggable": false,
+  "show-toolbar": true,
+  "show-footer": true,
+  "displayOnMobile": true,
+  "gallery": ["../volute-app-slides/images/1.png", "../volute-app-slides/images/2.png", "../volute-app-slides/images/3.png"],
+  "icon-image": "../volute-app-slides/images/slides-icon.png",
+  "authors": ["Rutgers"],
+  "on-enter-fullsceen": "slidesFullScreen",
+  "on-exit-fullsceen": "slidesFullScreen",
+  "display-preferences":
+  {
+    "height": "400px",
+    "width": "400px",
+    "display-name": "Slides"
+  },
+  "widget-size":
+  {
+    "height": 16,
+    "width": 16
+  },
+  "display-modes": ["icon-mode", "widget-mode", "fullscreen-mode"],
+  "license": "http://volute.co/LICENSE.txt",
+  "keywords": ["web-components", "volute-app", "volute-application"],
+  "main": "index.html",
+  "toolbar":
+  {
+    "title": "Slides",
+    "height": "40px",
+    "bg-color": "#e2e6ef",
+    "fg-color": "#002d40",
+    "other-col": "#e2e6ef"
+  },
+  "footer":
+  {
+    "height": "40px",
+    "bg-color": "#fff",
+    "fg-color": "#e3e8ee",
+    "other-col": "#fff",
+    "icon-features-right": [
+    {
+      "id": 3484,
+      "name": "Share",
+      "icon": "social:share",
+      "image": null,
+      "action": "",
+      "param": null,
+      "type": null,
+      "placement": "icon-features-right",
+      "menu-factory": null,
+      "isConfigurable": true,
+      "displayOnMobile": false,
+      "roles": []
+    },
+    {
+      "id": 3427,
+      "name": "Manage Slides",
+      "icon": "settings",
+      "image": null,
+      "action": "manage",
+      "param": null,
+      "type": null,
+      "placement": "icon-features-right",
+      "menu-factory": null,
+      "isConfigurable": true,
+      "displayOnMobile": false,
+      "roles": [
+      {
+        "id": 2000,
+        "name": "Facilitator"
+      },
+      {
+        "id": 987,
+        "name": "Admin"
+      },
+      {
+        "id": 2033,
+        "name": "Admin"
+      },
+      {
+        "id": 1243,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1047,
+        "name": "Facilitator"
+      },
+      {
+        "id": 988,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1999,
+        "name": "Admin"
+      },
+      {
+        "id": 992,
+        "name": "Facilitator"
+      },
+      {
+        "id": 814,
+        "name": "Facilitator"
+      },
+      {
+        "id": 813,
+        "name": "Admin"
+      },
+      {
+        "id": 1625,
+        "name": "Admin"
+      },
+      {
+        "id": 991,
+        "name": "Admin"
+      },
+      {
+        "id": 737,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1364,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1382,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1381,
+        "name": "Admin"
+      },
+      {
+        "id": 1630,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1046,
+        "name": "Admin"
+      },
+      {
+        "id": 1621,
+        "name": "Admin"
+      },
+      {
+        "id": 1408,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2034,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1759,
+        "name": "Admin"
+      },
+      {
+        "id": 1760,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2,
+        "name": "Admin"
+      },
+      {
+        "id": 1238,
+        "name": "Admin"
+      },
+      {
+        "id": 1407,
+        "name": "Admin"
+      },
+      {
+        "id": 821,
+        "name": "Admin"
+      },
+      {
+        "id": 2018,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1296,
+        "name": "Admin"
+      },
+      {
+        "id": 2006,
+        "name": "Admin"
+      },
+      {
+        "id": 1618,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1242,
+        "name": "Admin"
+      },
+      {
+        "id": 1297,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2638,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1626,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1235,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2597,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1751,
+        "name": "Admin"
+      },
+      {
+        "id": 826,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1133,
+        "name": "Admin"
+      },
+      {
+        "id": 1622,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2017,
+        "name": "Admin"
+      },
+      {
+        "id": 736,
+        "name": "Admin"
+      },
+      {
+        "id": 1752,
+        "name": "Facilitator"
+      },
+      {
+        "id": 825,
+        "name": "Admin"
+      },
+      {
+        "id": 1755,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1123,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1239,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2637,
+        "name": "Admin"
+      },
+      {
+        "id": 1363,
+        "name": "Admin"
+      },
+      {
+        "id": 2007,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1756,
+        "name": "Facilitator"
+      },
+      {
+        "id": 822,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1617,
+        "name": "Admin"
+      },
+      {
+        "id": 1234,
+        "name": "Admin"
+      },
+      {
+        "id": 1629,
+        "name": "Admin"
+      },
+      {
+        "id": 1122,
+        "name": "Admin"
+      },
+      {
+        "id": 2596,
+        "name": "Admin"
+      },
+      {
+        "id": 1134,
+        "name": "Facilitator"
+      }]
+    },
+    {
+      "id": 3310,
+      "name": "Help",
+      "icon": "icons:help-outline",
+      "image": null,
+      "action": "",
+      "param": null,
+      "type": null,
+      "placement": "icon-features-right",
+      "menu-factory": null,
+      "isConfigurable": true,
+      "displayOnMobile": false,
+      "roles": [
+      {
+        "id": 1762,
+        "name": "Observer"
+      },
+      {
+        "id": 1243,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1047,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1623,
+        "name": "Participant"
+      },
+      {
+        "id": 738,
+        "name": "Participant"
+      },
+      {
+        "id": 988,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1384,
+        "name": "Observer"
+      },
+      {
+        "id": 1299,
+        "name": "Observer"
+      },
+      {
+        "id": 1619,
+        "name": "Participant"
+      },
+      {
+        "id": 1625,
+        "name": "Admin"
+      },
+      {
+        "id": 991,
+        "name": "Admin"
+      },
+      {
+        "id": 1620,
+        "name": "Observer"
+      },
+      {
+        "id": 739,
+        "name": "Observer"
+      },
+      {
+        "id": 824,
+        "name": "Observer"
+      },
+      {
+        "id": 1381,
+        "name": "Admin"
+      },
+      {
+        "id": 1757,
+        "name": "Participant"
+      },
+      {
+        "id": 2001,
+        "name": "Participant"
+      },
+      {
+        "id": 2002,
+        "name": "Observer"
+      },
+      {
+        "id": 2036,
+        "name": "Observer"
+      },
+      {
+        "id": 1628,
+        "name": "Observer"
+      },
+      {
+        "id": 2034,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1761,
+        "name": "Participant"
+      },
+      {
+        "id": 1759,
+        "name": "Admin"
+      },
+      {
+        "id": 1760,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1753,
+        "name": "Participant"
+      },
+      {
+        "id": 1407,
+        "name": "Admin"
+      },
+      {
+        "id": 2019,
+        "name": "Participant"
+      },
+      {
+        "id": 2018,
+        "name": "Facilitator"
+      },
+      {
+        "id": 815,
+        "name": "Participant"
+      },
+      {
+        "id": 1242,
+        "name": "Admin"
+      },
+      {
+        "id": 1631,
+        "name": "Participant"
+      },
+      {
+        "id": 1297,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1235,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2597,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2009,
+        "name": "Observer"
+      },
+      {
+        "id": 2035,
+        "name": "Participant"
+      },
+      {
+        "id": 826,
+        "name": "Facilitator"
+      },
+      {
+        "id": 736,
+        "name": "Admin"
+      },
+      {
+        "id": 1365,
+        "name": "Participant"
+      },
+      {
+        "id": 2020,
+        "name": "Observer"
+      },
+      {
+        "id": 994,
+        "name": "Observer"
+      },
+      {
+        "id": 1124,
+        "name": "Participant"
+      },
+      {
+        "id": 1752,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1383,
+        "name": "Participant"
+      },
+      {
+        "id": 4,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2007,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1756,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1617,
+        "name": "Admin"
+      },
+      {
+        "id": 1629,
+        "name": "Admin"
+      },
+      {
+        "id": 1136,
+        "name": "Observer"
+      },
+      {
+        "id": 990,
+        "name": "Observer"
+      },
+      {
+        "id": 1134,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1049,
+        "name": "Observer"
+      },
+      {
+        "id": 1366,
+        "name": "Observer"
+      },
+      {
+        "id": 2000,
+        "name": "Facilitator"
+      },
+      {
+        "id": 987,
+        "name": "Admin"
+      },
+      {
+        "id": 2033,
+        "name": "Admin"
+      },
+      {
+        "id": 1236,
+        "name": "Participant"
+      },
+      {
+        "id": 1298,
+        "name": "Participant"
+      },
+      {
+        "id": 1135,
+        "name": "Participant"
+      },
+      {
+        "id": 816,
+        "name": "Observer"
+      },
+      {
+        "id": 1632,
+        "name": "Observer"
+      },
+      {
+        "id": 2008,
+        "name": "Participant"
+      },
+      {
+        "id": 1999,
+        "name": "Admin"
+      },
+      {
+        "id": 992,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1241,
+        "name": "Observer"
+      },
+      {
+        "id": 814,
+        "name": "Facilitator"
+      },
+      {
+        "id": 813,
+        "name": "Admin"
+      },
+      {
+        "id": 828,
+        "name": "Observer"
+      },
+      {
+        "id": 827,
+        "name": "Participant"
+      },
+      {
+        "id": 5,
+        "name": "Participant"
+      },
+      {
+        "id": 1624,
+        "name": "Observer"
+      },
+      {
+        "id": 737,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1364,
+        "name": "Facilitator"
+      },
+      {
+        "id": 989,
+        "name": "Participant"
+      },
+      {
+        "id": 1410,
+        "name": "Observer"
+      },
+      {
+        "id": 823,
+        "name": "Participant"
+      },
+      {
+        "id": 1240,
+        "name": "Participant"
+      },
+      {
+        "id": 993,
+        "name": "Participant"
+      },
+      {
+        "id": 1382,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2599,
+        "name": "Observer"
+      },
+      {
+        "id": 1630,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1046,
+        "name": "Admin"
+      },
+      {
+        "id": 1048,
+        "name": "Participant"
+      },
+      {
+        "id": 1621,
+        "name": "Admin"
+      },
+      {
+        "id": 2640,
+        "name": "Observer"
+      },
+      {
+        "id": 2639,
+        "name": "Participant"
+      },
+      {
+        "id": 1408,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1627,
+        "name": "Participant"
+      },
+      {
+        "id": 2,
+        "name": "Admin"
+      },
+      {
+        "id": 1238,
+        "name": "Admin"
+      },
+      {
+        "id": 1754,
+        "name": "Observer"
+      },
+      {
+        "id": 821,
+        "name": "Admin"
+      },
+      {
+        "id": 1296,
+        "name": "Admin"
+      },
+      {
+        "id": 2006,
+        "name": "Admin"
+      },
+      {
+        "id": 1125,
+        "name": "Observer"
+      },
+      {
+        "id": 1618,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2638,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1626,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2598,
+        "name": "Participant"
+      },
+      {
+        "id": 1237,
+        "name": "Observer"
+      },
+      {
+        "id": 6,
+        "name": "Observer"
+      },
+      {
+        "id": 1751,
+        "name": "Admin"
+      },
+      {
+        "id": 1133,
+        "name": "Admin"
+      },
+      {
+        "id": 1622,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2017,
+        "name": "Admin"
+      },
+      {
+        "id": 825,
+        "name": "Admin"
+      },
+      {
+        "id": 1409,
+        "name": "Participant"
+      },
+      {
+        "id": 1755,
+        "name": "Admin"
+      },
+      {
+        "id": 1123,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1239,
+        "name": "Facilitator"
+      },
+      {
+        "id": 2637,
+        "name": "Admin"
+      },
+      {
+        "id": 1363,
+        "name": "Admin"
+      },
+      {
+        "id": 822,
+        "name": "Facilitator"
+      },
+      {
+        "id": 1244,
+        "name": "Participant"
+      },
+      {
+        "id": 1234,
+        "name": "Admin"
+      },
+      {
+        "id": 1245,
+        "name": "Observer"
+      },
+      {
+        "id": 1122,
+        "name": "Admin"
+      },
+      {
+        "id": 1758,
+        "name": "Observer"
+      },
+      {
+        "id": 2596,
+        "name": "Admin"
+      }]
+    },
+    {
+      "id": 3584,
+      "name": "Close",
+      "icon": "icons:highlight-off",
+      "image": null,
+      "action": "doExitMobileMode",
+      "param": null,
+      "type": null,
+      "placement": "icon-features-right",
+      "menu-factory": null,
+      "isConfigurable": false,
+      "displayOnMobile": true,
+      "roles": []
+    }],
+    "icon-features-left": [
+    {
+      "id": 3567,
+      "name": "fullscreen",
+      "icon": "icons:launch",
+      "image": null,
+      "action": null,
+      "param": null,
+      "type": null,
+      "placement": "icon-features-left",
+      "menu-factory": null,
+      "isConfigurable": true,
+      "displayOnMobile": false,
+      "roles": []
+    }]
+  },
+  "management": "../volute-app-slides/faces/face2-elements/slides-manager-index.html",
+  "rootPath": "volute-app-slides",
+  "alias": "VoluteAppSlides",
+  "dependencies":
+  {
+    "xAPIHandlers": "../volute-app-slides/xapi/handlers.js"
+  },
+  "creator":
+  {
+    "email": "sandbox@volute.co.archived",
+    "user":
+    {
+      "userId": "test",
+      "email": "sandbox@volute.co.archived",
+      "firstName": "Volute",
+      "lastName": "Owner",
+      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
+      "phoneNumber": "",
+      "lastLogin": "2017-01-04T15:33:24"
+    },
+    "account":
+    {
+      "id": 1,
+      "name": "Org1",
+      "lrsDashboardId": null
+    },
+    "cohort": null
+  },
+  "author": null,
+  "isPublic": true,
+  "type": "app",
+  "versionLabel": null,
+  "iconName": null,
+  "creationDate": "2016-07-12 03:41:54 PM",
+  "roles": [
+  {
+    "id": 1762,
+    "name": "Observer"
+  },
+  {
+    "id": 1243,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1047,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1623,
+    "name": "Participant"
+  },
+  {
+    "id": 738,
+    "name": "Participant"
+  },
+  {
+    "id": 988,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1384,
+    "name": "Observer"
+  },
+  {
+    "id": 1299,
+    "name": "Observer"
+  },
+  {
+    "id": 1619,
+    "name": "Participant"
+  },
+  {
+    "id": 1625,
+    "name": "Admin"
+  },
+  {
+    "id": 991,
+    "name": "Admin"
+  },
+  {
+    "id": 1620,
+    "name": "Observer"
+  },
+  {
+    "id": 739,
+    "name": "Observer"
+  },
+  {
+    "id": 824,
+    "name": "Observer"
+  },
+  {
+    "id": 1381,
+    "name": "Admin"
+  },
+  {
+    "id": 1757,
+    "name": "Participant"
+  },
+  {
+    "id": 2001,
+    "name": "Participant"
+  },
+  {
+    "id": 2002,
+    "name": "Observer"
+  },
+  {
+    "id": 2036,
+    "name": "Observer"
+  },
+  {
+    "id": 1628,
+    "name": "Observer"
+  },
+  {
+    "id": 2034,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1761,
+    "name": "Participant"
+  },
+  {
+    "id": 1759,
+    "name": "Admin"
+  },
+  {
+    "id": 1760,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1753,
+    "name": "Participant"
+  },
+  {
+    "id": 1407,
+    "name": "Admin"
+  },
+  {
+    "id": 2019,
+    "name": "Participant"
+  },
+  {
+    "id": 2018,
+    "name": "Facilitator"
+  },
+  {
+    "id": 815,
+    "name": "Participant"
+  },
+  {
+    "id": 1242,
+    "name": "Admin"
+  },
+  {
+    "id": 1631,
+    "name": "Participant"
+  },
+  {
+    "id": 1297,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1235,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2597,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2009,
+    "name": "Observer"
+  },
+  {
+    "id": 2035,
+    "name": "Participant"
+  },
+  {
+    "id": 826,
+    "name": "Facilitator"
+  },
+  {
+    "id": 736,
+    "name": "Admin"
+  },
+  {
+    "id": 1365,
+    "name": "Participant"
+  },
+  {
+    "id": 2020,
+    "name": "Observer"
+  },
+  {
+    "id": 994,
+    "name": "Observer"
+  },
+  {
+    "id": 1752,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1124,
+    "name": "Participant"
+  },
+  {
+    "id": 1383,
+    "name": "Participant"
+  },
+  {
+    "id": 4,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2007,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1756,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1617,
+    "name": "Admin"
+  },
+  {
+    "id": 1629,
+    "name": "Admin"
+  },
+  {
+    "id": 1136,
+    "name": "Observer"
+  },
+  {
+    "id": 990,
+    "name": "Observer"
+  },
+  {
+    "id": 1134,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1049,
+    "name": "Observer"
+  },
+  {
+    "id": 1366,
+    "name": "Observer"
+  },
+  {
+    "id": 2000,
+    "name": "Facilitator"
+  },
+  {
+    "id": 987,
+    "name": "Admin"
+  },
+  {
+    "id": 2033,
+    "name": "Admin"
+  },
+  {
+    "id": 1236,
+    "name": "Participant"
+  },
+  {
+    "id": 1298,
+    "name": "Participant"
+  },
+  {
+    "id": 1135,
+    "name": "Participant"
+  },
+  {
+    "id": 816,
+    "name": "Observer"
+  },
+  {
+    "id": 1632,
+    "name": "Observer"
+  },
+  {
+    "id": 2008,
+    "name": "Participant"
+  },
+  {
+    "id": 1999,
+    "name": "Admin"
+  },
+  {
+    "id": 992,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1241,
+    "name": "Observer"
+  },
+  {
+    "id": 814,
+    "name": "Facilitator"
+  },
+  {
+    "id": 813,
+    "name": "Admin"
+  },
+  {
+    "id": 828,
+    "name": "Observer"
+  },
+  {
+    "id": 827,
+    "name": "Participant"
+  },
+  {
+    "id": 5,
+    "name": "Participant"
+  },
+  {
+    "id": 1624,
+    "name": "Observer"
+  },
+  {
+    "id": 737,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1364,
+    "name": "Facilitator"
+  },
+  {
+    "id": 989,
+    "name": "Participant"
+  },
+  {
+    "id": 1410,
+    "name": "Observer"
+  },
+  {
+    "id": 823,
+    "name": "Participant"
+  },
+  {
+    "id": 1240,
+    "name": "Participant"
+  },
+  {
+    "id": 993,
+    "name": "Participant"
+  },
+  {
+    "id": 1382,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2599,
+    "name": "Observer"
+  },
+  {
+    "id": 1630,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1046,
+    "name": "Admin"
+  },
+  {
+    "id": 1048,
+    "name": "Participant"
+  },
+  {
+    "id": 1621,
+    "name": "Admin"
+  },
+  {
+    "id": 2640,
+    "name": "Observer"
+  },
+  {
+    "id": 2639,
+    "name": "Participant"
+  },
+  {
+    "id": 1408,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1627,
+    "name": "Participant"
+  },
+  {
+    "id": 2,
+    "name": "Admin"
+  },
+  {
+    "id": 1238,
+    "name": "Admin"
+  },
+  {
+    "id": 1754,
+    "name": "Observer"
+  },
+  {
+    "id": 821,
+    "name": "Admin"
+  },
+  {
+    "id": 1296,
+    "name": "Admin"
+  },
+  {
+    "id": 2006,
+    "name": "Admin"
+  },
+  {
+    "id": 1125,
+    "name": "Observer"
+  },
+  {
+    "id": 1618,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2638,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1626,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2598,
+    "name": "Participant"
+  },
+  {
+    "id": 1237,
+    "name": "Observer"
+  },
+  {
+    "id": 6,
+    "name": "Observer"
+  },
+  {
+    "id": 1751,
+    "name": "Admin"
+  },
+  {
+    "id": 1133,
+    "name": "Admin"
+  },
+  {
+    "id": 1622,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2017,
+    "name": "Admin"
+  },
+  {
+    "id": 825,
+    "name": "Admin"
+  },
+  {
+    "id": 1409,
+    "name": "Participant"
+  },
+  {
+    "id": 1755,
+    "name": "Admin"
+  },
+  {
+    "id": 1239,
+    "name": "Facilitator"
+  },
+  {
+    "id": 2637,
+    "name": "Admin"
+  },
+  {
+    "id": 1363,
+    "name": "Admin"
+  },
+  {
+    "id": 822,
+    "name": "Facilitator"
+  },
+  {
+    "id": 1244,
+    "name": "Participant"
+  },
+  {
+    "id": 1234,
+    "name": "Admin"
+  },
+  {
+    "id": 1245,
+    "name": "Observer"
+  },
+  {
+    "id": 1122,
+    "name": "Admin"
+  },
+  {
+    "id": 1758,
+    "name": "Observer"
+  },
+  {
+    "id": 2596,
+    "name": "Admin"
+  }],
+  "lastModifiedDate": "2017-08-16 02:04:20 PM",
+  "discussions": [],
+  "isCompletable": false,
+  "appUUID": null,
+  "purchased": true
+}
