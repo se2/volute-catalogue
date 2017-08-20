@@ -1,779 +1,330 @@
 [
 {
+  "id": 1,
+  "name": "Assessments",
+  "description": "Drive excellence and performance outcomes by integrating the power of qualtrics<sup>&reg;<\/sup> with Assessments. Identify key competencies at strategic points throughout the learning journey and increase engagement, develop top performers and build strong teams. Seamlessly measure and connect insights across the participants learning journey and provide effective feedback.",
+  "author": "qualtrics<sup>&reg;<\/sup>",
+  "developers": ["qualtrics<sup>&reg;<\/sup>", "Volute<sup>&reg;<\/sup>"],
+  "category": ["schedule", "planning", "logistics", "itinerary"],
+  "release": "6-2017",
+  "version": "1.0",
+  "format": [],
+  "related": []
+},
+{
+  "id": 2,
+  "name": "Profiles",
+  "description": "It’s good to know who you’re working with. When you’re looking for an answer or just need to bounce an idea, Profiles provides information about the people with whom you are working, learning or solving the next big challenge. It provides a quick snapshot of who they are, their skills and connections to their social media profiles.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["bio", "profile", "social", "user"],
+  "release": "1-2017",
+  "version": "1.5",
+  "related": ["Profile", "Portfolio"]
+},
+{
+  "id": 3,
+  "name": "Reader",
+  "description": "The Reader provides a list of readings for a particular learning objective and presents them to you in an engaging, connected way. Pull different books or excerpts from books and add them to a participants’ activity. The Reader allows downloading, sharing and annotations.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["literacy", "reading", "articles"],
+  "release": "12-2017",
+  "version": "2.0",
+  "formats": ["PDF"]
+},
+{
+  "id": 4,
+  "name": "Portal",
+  "description": "A gateway to connect other applications or websites to a learning activity. Pull information from external sources and associate it to a specific learning objective or project. Participants can view the information as if it were an integrated part of the assignment. Simply reference the URL for the application or website and connect the Portal.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["integration"],
+  "release": "2-2017",
+  "version": "2.0",
+  "formats": ["https", "SSO", "API"]
+},
+{
+  "id": 5,
+  "name": "Profile",
+  "description": "Know your peers, mentors and coaches with a Profile. See who you’re working and learning with, read about their background, history and skills and connect with them on social media. Of course this depends on the permissions set by the user, but if they want to know about you, they should be willing to share themselves.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["profile", "social", "biography"],
+  "release": "12-2017",
+  "version": "2.0",
+  "formats": ["PDF"]
+},
+{
+  "id": 6,
+  "name": "Journey",
+  "description": "Volute is an exciting experience that presents learning as a personal Journey. Your Journey provides information about the program, module, course or session and a list of activities that are made up of interactive tools. The Journey provides access from any device and any location and is a seamless and engaging experience.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["program management", "course management", "navigation"],
+  "release": "1-2017",
+  "version": "3.0"
+},
+{
+  "id": 7,
+  "name": "Social Hub",
+  "description": "Know what’s happening at all times within your learning journey. Social Hub centralizes interaction and communication across all your learning activities and notifies you of important events. Interact with recent discussions, groups, events, reviews and alerts. Social Hub is a good listener and provides you with relevant information when you need it.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["alerts", "notifications", "social learning", "events", "navigation", "collaboration"],
+  "release": "8-2017",
+  "version": "2.0"
+},
+{
+  "id": 8,
+  "name": "Rich Text",
+  "description": "When you need a bit of style, color and special features for your text, Rich Text accommodates. Recreate syllabi, handouts, instructions or whatever you can dream up, with a creative twist using Rich Text. The options are only limited by your creativity.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["design", "reading", "brochures", "CMS", "syllabi"],
+  "release": "1-2017",
+  "version": "2.0",
+  "formats": ["HTML", "rich text", "images"]
+},
+{
+  "id": 9,
+  "name": "Calendar",
+  "description": "Never miss an important event! Your learning journey is filled with exciting activities, challenging projects and stimulating meetings. Calendar ensures you don’t miss any of it. Like all tools, Calendar can be added to each activity or can apply to the entire program. Calendar events are also displayed to you in your Social Hub. Invite peers to a meeting and their Calendar is automatically updated.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["calendar", "events", "announcements", "schedule"],
+  "release": "1-2017",
+  "version": "2.0"
+},
+{
+  "id": 10,
+  "name": "File Share",
+  "description": "Store and share files with File Share and access from anywhere. Share files with your team and centralize access to various artifacts, media and documents. File Share can be connected to just about any repository including AWS S3, Google Drive, Google Docs or any server configured with access.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["content", "integration", "file share", "storage"],
+  "release": "2-2017",
+  "version": "1.0",
+  "formats": ["any", "AWS S3", "Google Drive", "Google Docs", "folders"]
+},
+{
+  "id": 11,
+  "name": "Portfolio",
+  "description": "Share your accomplishments and success stories in your own Portfolio. Let others see who their working with and share your photo with peers, colleagues and mentors. Provide insights into who you are as a professional, your work, success stories, background and accomplishments. Share with your peers and coaches to create a deeper experience and build stronger professional relationships.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["biography", "social", "profile", "portfolio"],
+  "release": "2-2017",
+  "version": "2.0"
+},
+{
   "id": 12,
-  "name": "Slides",
-  "description": "The Slides Tool offers users the ability to view a PDF slideshow.",
-  "creationDate": "2016-07-12 03:41:54 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-slides/images/slides-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-slides",
-  "display-preferences":
-  {
-    "display-name": "Slides"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Discussion",
+  "description": "Cultivate community by creating substantive discussions for meaningful debates, collaborative research and solutions exploration to challenging team projects. Focused discussions can be added to specific learning objectives to help govern the communication for that objective. Discussions can be created pre-emptively or ad hoc. Engaging in online discourse is a modern skill in and of itself.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["messaging", "discussions", "communication", "collaboration"],
+  "release": "2-2017",
+  "version": "2.0"
 },
 {
   "id": 13,
-  "name": "Announcements",
-  "description": "The Announcements Tool allows users to notify their audience of important information.",
-  "creationDate": "2016-07-12 04:19:52 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-announcements/images/announcements-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-announcements",
-  "display-preferences":
-  {
-    "display-name": "Announcements"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 4,
-    "name": "Notifications"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Notes",
+  "description": "Take Notes anytime and anywhere throughout your learning journey. Notes can be taken for the entire program or can be associated to specific learning activities. Like all Volute tools, Notes can be taken on your desktop, tablet and smartphone to capture learning moments and ideas. Notes are contextually relevant and automatically saved so when you return to a specific learning journey the notes you took for that activity will be presented to you. Notes can be shared with others for team projects and within groups.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["notes", "journal", "collaboration", "memo"],
+  "release": "2-2017",
+  "version": "2.0"
 },
 {
   "id": 14,
-  "name": "Tasks",
-  "description": "The Tasks Tool allows users to create and manage a list of items that require action.",
-  "creationDate": "2016-07-12 04:20:56 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-task/images/task-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-task",
-  "display-preferences":
-  {
-    "display-name": "Tasks"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Video",
+  "description": "Immerse participants in rich videos that can be associated to other interactive learning tools to enhance the power of rich learning media. Provide team introductions and faculty lectures and enhance course content with Video. Capture video from your smartphone and load to your learning journey and share videos with participants and teams.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["video", "media"],
+  "release": "2-2017",
+  "version": "3.0",
+  "formats": ["YouTube", "Vimeo", "Kaltura", "MP4"]
 },
 {
   "id": 15,
   "name": "Directory",
-  "description": "The Directory Tool displays a list of users and their basic contact information.",
-  "creationDate": "2016-07-12 04:21:20 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-directory/images/directory-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-directory",
-  "display-preferences":
-  {
-    "display-name": "Directory"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "description": "A shortened version of Profiles, Directory provides a list of users relevant to a task or activity. Show participants their mentors, coaches and facilitators with a picture and email address. List people the participants will be meeting with when traveling or just provide a personal touch with a list of staff members who are there to support them.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["profile", "lists", "directory"],
+  "release": "3-2017",
+  "version": "1.0"
 },
 {
   "id": 16,
-  "name": "Video",
-  "description": "The Video Tool allows users to play a video or select from a playlist of videos.",
-  "creationDate": "2016-07-12 04:21:37 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-video/images/video-list-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-video",
-  "display-preferences":
-  {
-    "display-name": "Video"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Tasks",
+  "description": "Track important milestones and activities with Tasks. Participants can be provided a task list for the overall program, module or activity. Tasks helps coordinate and direct collaborative activities and group work. Tasks help link together the efforts on a singular level to that of the larger task being completed by multiple members.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["content", "integration", "file share", "storage"],
+  "release": "2-2017",
+  "version": "1.0",
+  "formats": ["any", "AWS S3", "Google Drive", "Google Docs", "folders"]
 },
 {
   "id": 17,
-  "name": "Notes",
-  "description": "Users can use this Tool to capture their study observations or comments at any point within a Program or within associated Mashups.",
-  "creationDate": "2016-07-12 04:21:53 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-notes/images/notes-icon.png",
-  "displayOnMobile": false,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-notes",
-  "display-preferences":
-  {
-    "display-name": "Notes"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": "null",
-  "author": "null",
-  "purchased": true
+  "name": "Journey Designer",
+  "description": "Design beautiful, intensive and collaborative learning journeys with Journey Designer. Designed for professional development, you can design for a variety of approaches including coaching, lesson study, communities of practice, mentoring, reflective supervision and certifications. Brand each program for your client or cohort with color themes and logos, and assign custom learning activities. The power of Journey Designer is also matched with its ease of use, providing a rapid way to create unique learning experiences in advance or on-demand.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["program management", "course management", "navigation"],
+  "release": "2-2017",
+  "version": "3.0"
 },
 {
   "id": 18,
-  "name": "Discussion",
-  "description": "The Discussion Tool allows individuals and groups to chat and discuss various topics.",
-  "creationDate": "2016-07-12 04:22:07 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-discussion/images/discussion-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-discussion",
-  "display-preferences":
-  {
-    "display-name": "Discussion"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 3,
-    "name": "Collaboration"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "User Manager",
+  "description": "Organize and manage staff, participants and cohorts with Manage Users. Register participants to courses and programs, assign them to one or multiple cohorts and track participant related data. Manage Users is also designed for bulk uploads from your SIS or participants can be added one at a time ad hoc. Manage Users can also be customized to integrate with your specific SIS of record.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["user management", "student information system", "role management", "cohorts"],
+  "release": "2-2017",
+  "version": "2.0",
+  "formats": ["CSV", "custom integrations"]
+},
+{
+  "id": 19,
+  "name": "Announcements",
+  "description": "It’s important that participants are informed of important topics, events and any relevant information in a timely manner and Announcements does just that. Raise awareness to important messages or provide a new way to deliver press or even sales announcements to participants. Participants can also create their own announcements to share with peers and teams. Announcements are also shown in the Social Hub automatically to authorized receivers.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["notifications", "events", "alerts", "announcements", "press"],
+  "release": "2-2017",
+  "version": "1.5",
+  "formats": ["text", "images"]
 },
 {
   "id": 20,
-  "name": "Portfolio",
-  "description": "The Portfolio Tool contains each user’s contact information, a brief biography, and links to their social media profiles.",
-  "creationDate": "2016-07-12 04:22:36 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-profile/images/new-profile-icon.png",
-  "displayOnMobile": false,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-profile",
-  "display-preferences":
-  {
-    "display-name": "Portfolio"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Slides",
+  "description": "Present beautiful and compelling slideshows to convey information in a visual, linear way. Use your favorite slideshow creator tool and load into Slides to associate information from multiple sources in a unified way. You can also connect your slideshow using Portal if you’re looking for a more integrated experience. Slides wraps your slideshows and presents them to the participants within a specific activity. Slides, like all Volute tools, is designed to work across all devices.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["presentations", "slides", "slideshow"],
+  "release": "2-2017",
+  "version": "1.0",
+  "formats": ["PDF (conversion from any slideshow creator software)"]
 },
 {
   "id": 21,
-  "name": "Content Integration",
-  "description": "The Content Integration Tool provides users with the ability to upload or download files.",
-  "creationDate": "2016-07-12 04:22:51 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-content-integration/images/content-integration-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-content-integration",
-  "display-preferences":
-  {
-    "display-name": "Content Integration"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "CoPilot",
+  "description": "Throughout your learning journey it’s good to have support. CoPilot offers a team of learning experience designers to help navigate your journey providing expertise for design considerations, tools and combinations of tools and power features of Volute. Our network of learning designers are specially trained to provide fresh insights and perspectives on how best to engage participants to achieve the performance outcomes you or your client desires.",
+  "author": "Teamwork<sup>&reg;<\/sup>",
+  "developers": ["Teamwork<sup>&reg;<\/sup>"],
+  "category": ["content management", "scheduling", "tasks", "messaging", "chat", "file storage", "planning"],
+  "release": "2-2017",
+  "version": "1.0"
 },
 {
   "id": 22,
-  "name": "Calendar",
-  "description": "The Calendar Tool allows users to manage, schedule and view events.",
-  "creationDate": "2016-07-12 04:23:31 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-calendar/images/calendar-icon.png",
-  "displayOnMobile": false,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-calendar",
-  "display-preferences":
-  {
-    "display-name": "Calendar"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 4,
-    "name": "Notifications"
-  }],
-  "appUUID": "null",
-  "author": "null",
-  "purchased": true
+  "name": "Analytics",
+  "description": "Our partnership with Learning Locker<sup>&reg;<\/sup> provides some of the most powerful learning analytics available on the market. Using a component based capture approach, Volute wraps every tool with KPI’s in the form of xAPI statements that are specific to the type of tool and content it wraps. As no other platform provides component based analytics, Volute removes white noise and busy “clicks” and focuses on interaction metrics with tools and behavioral data such as which activities and tools were activated, when and how.",
+  "author": "Learning Locker<sup>&reg;<\/sup>",
+  "developers": ["Learning Locker<sup>&reg;<\/sup>"],
+  "category": ["analytics", "metrics", "measurement", "xAPI", "performance outcomes"],
+  "release": "2-2017",
+  "version": "2.0",
+  "formats": ["xAPI"]
 },
 {
   "id": 23,
-  "name": "Rich Text Editor",
-  "description": "The Rich Text Editor Tool offers the ability to design and manage custom rich text content including images and URLs.",
-  "creationDate": "2016-07-12 04:24:06 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-text-image/images/volute-app-text-image.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-text-image",
-  "display-preferences":
-  {
-    "display-name": "Rich Text Editor"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Groups",
+  "description": "Organize participants into Groups to provide a collaborative experience to achieve learning objectives. Groups help inspire social interaction for a common objective and to provide a sense of community when they are faced with learning challenges. Create groups and assign them to specific activities to create a personalized learning journey or allow participants to create their own groups to band together for a common initiative.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["teams", "collaboration", "groups", "social"],
+  "release": "2-2017",
+  "version": "3.0"
+},
+{
+  "id": 24,
+  "name": "Navigator",
+  "description": "While en route to your learning destinations, you’ll need a way to navigate throughout your journey. Navigator acts as your personal GPS helping you find your way as you embark on challenging activities to reach your learning objective. Navigate to any learning activity quickly and from any location or device.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["journey", "navigation"],
+  "release": "2-2017",
+  "version": "4.0"
+},
+{
+  "id": 25,
+  "name": "Activity Designer",
+  "description": "Activities are learning objectives implemented as a collection of interactive tools. Each Activity can be designed for a specific style, approach, pedagogy and delivery method for the learning objective you are creating. Activity Designer provides a way to structure the activity, assign it, implement specific interactive tools and publish the activity. An activity can be private or social, open or exclusive.",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["program management", "program design", "learning objectives", "experience design"],
+  "release": "2-2017",
+  "version": "4.0"
+},
+{
+  "id": 26,
+  "name": "Marketplace",
+  "description": "The heart of Volute and our sharing economy business model, Marketplace is a centralized repository for Volute learning tools. Tools are contributed by thought leaders, like you, from all parts of the world packaging their expertise and tacit knowledge as tools for digital learning that connect like LEGO<sup>&reg;<\/sup> bricks. There are several types of marketplaces in Volute: <br\/> <ul><li>Community – the Community marketplace is where Volute members publish tools for other Volute members to use.<\/li><li>Private – the Private marketplace is your own private repository to hold all your community and private tools.<\/li><li>Participant – bundle and sell, license or share programs, courses, certifications and more to your participants.<\/li><\/ul>",
+  "author": "Volute<sup>&reg;<\/sup>",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["content", "integration", "tools", "storage", "exchange", "sharing economy", "marketplace"],
+  "release": "2-2017",
+  "version": "4.0"
+},
+{
+  "id": 27,
+  "name": "Peer Review",
+  "description": "Assign learning activities to be evaluated by one or more participants of similar competence to the producers of the work. Peer Review offers a new way to emulate live peer collaboration by providing the reviewer access to a copy of the actual activity to be reviewed. This copy is an actual clone of the activity including copies of each tool for that activity being reviewed. The reviewer follows a rubric to guide the review and can provide critique and commentary. Peer Review is also gamified by offering a leaderboard option, and a timer.",
+  "author": "Rutgers Department of Continuing Studies",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["content", "integration", "file share", "storage"],
+  "release": "2-2017",
+  "version": "1.0",
+  "related": ["Reviewer", "Reviews", "Rate Reviewer", "Timer", "Rubric (custom)"]
+},
+{
+  "id": 28,
+  "name": "Passport",
+  "description": "When participants travel for onsite training or residency programs, Passport provides real-time information about the location, logistics, history, schedule and more and to also provide a unique “ID” for the participant to gain access to the training location. Streamline your logistics management and provide an elegant way to give your participants the information they need when they need it.",
+  "author": "Drexel LeBow College of Business",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["content", "integration", "file share", "storage"],
+  "release": "12-2017",
+  "version": "1.0",
+  "related": ["Photoshare", "Itinerary"]
+},
+{
+  "id": 29,
+  "name": "Photoshare",
+  "description": "Capture learning moments with photographs and add them to your learning journey. Share photos with peers, colleagues and facilitators. Offer new learning activities to engage participants with photos of team projects, destinations or learning materials. Photoshare builds comradery and provides a deeper sense of community allowing both participants and facilitators to upload photos and tag them as part of a learning activity.",
+  "author": "Drexel LeBow College of Business",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["photos", "photography", "album", "social", "gallery"],
+  "release": "12-2017",
+  "version": "1.0",
+  "related": ["Passport", "Itinerary"]
+},
+{
+  "id": 30,
+  "name": "Itinerary",
+  "description": "A unique way to document times, events, tasks or actions intended to take place for a learning objective or series of objectives. Itinerary can be used to manage logistics for participants abroad, or can be used to help plan and coordinate a project. Participants can be creative with collaborative activities by creating an itinerary and series of associated tasks. Facilitators can provide a fun way to manage team projects and group work.",
+  "author": "Drexel LeBow College of Business",
+  "developers": ["Volute<sup>&reg;<\/sup>"],
+  "category": ["schedule", "planning", "logistics", "itinerary"],
+  "release": "12-2017",
+  "version": "1.0",
+  "related": ["Passport", "Photoshare", "Tasks"]
 },
 {
   "id": 31,
-  "name": "Portal",
-  "description": "The Portal Tool offers users the ability to load external content into a tool.",
-  "creationDate": "2017-01-15 03:33:35 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-iframe/images/iframe-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "clynch@volute.co",
-    "user":
-    {
-      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
-      "email": "clynch@volute.co",
-      "firstName": "Christopher",
-      "lastName": "Lynch",
-      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
-      "lastLogin": "2017-08-17T18:58:45"
-    },
-    "account":
-    {
-      "id": 19,
-      "name": "Volute",
-      "lrsDashboardId": null
-    },
-    "cohort": ""
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-iframe",
-  "display-preferences":
-  {
-    "display-name": "Portal"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
-},
-{
-  "id": 32,
-  "name": "Reader",
-  "description": "The Reader Tool allows users to read PDF documents.",
-  "creationDate": "2017-01-18 08:43:22 AM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-reader/images/reader-icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-reader",
-  "display-preferences":
-  {
-    "display-name": "Reader"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
-},
-{
-  "id": 33,
-  "name": "Learning Design",
-  "description": "The Learning Design Tool allows collaboration between your team and Volute’s Learning Design team.",
-  "creationDate": "2017-02-13 06:26:41 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-id/images/instructional-design-icons.png",
-  "creator":
-  {
-    "email": "clynch@volute.co",
-    "user":
-    {
-      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
-      "email": "clynch@volute.co",
-      "firstName": "Christopher",
-      "lastName": "Lynch",
-      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
-      "lastLogin": "2017-08-17T18:58:45"
-    },
-    "account":
-    {
-      "id": 19,
-      "name": "Volute",
-      "lrsDashboardId": null
-    },
-    "cohort": ""
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-id",
-  "display-preferences":
-  {
-    "display-name": "Learning Design"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
-},
-{
-  "id": 334,
-  "name": "Biography",
-  "description": "The Biography Tool allows users add a photo, biography, and social media links for any individual.",
-  "creationDate": "2016-10-05 04:41:48 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-biography/images/portfolio.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-biography",
-  "display-preferences":
-  {
-    "display-name": "Biography"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
-},
-{
-  "id": 1003,
-  "name": "Journey",
-  "description": "My Journey provides a single location that lists all of the relevant learning Activities within a Program.",
-  "creationDate": "2016-09-04 02:43:32 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-journey/icon.png",
-  "displayOnMobile": true,
-  "creator":
-  {
-    "email": "sandbox@volute.co.archived",
-    "user":
-    {
-      "userId": "test",
-      "email": "sandbox@volute.co.archived",
-      "firstName": "Volute",
-      "lastName": "Owner",
-      "picture": "https://d3a719uep6lws.cloudfront.net/67ad8816-9432-4b47-a4d2-53d018a906bf",
-      "phoneNumber": "",
-      "lastLogin": "2017-01-04T15:33:24"
-    },
-    "account":
-    {
-      "id": 1,
-      "name": "Org1",
-      "lrsDashboardId": null
-    },
-    "cohort": null
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-journey",
-  "display-preferences":
-  {
-    "display-name": "My Journey"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 10,
-    "name": "Learning Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
-},
-{
-  "id": 1010,
-  "name": "Assessment",
-  "description": "The Assessment Tool integrates with the Qualtrics API to give you powerful survey and assessment capabilities.",
-  "creationDate": "2017-05-01 04:38:27 PM",
-  "isPublic": true,
-  "type": "app",
-  "icon-image": "../volute-app-assessment/images/assessment-icon.png",
-  "displayOnMobile": false,
-  "creator":
-  {
-    "email": "clynch@volute.co",
-    "user":
-    {
-      "userId": "40e1bcb9-965f-482b-8bb9-6e4ce6aac931",
-      "email": "clynch@volute.co",
-      "firstName": "Christopher",
-      "lastName": "Lynch",
-      "picture": "https://d3a719uep6lws.cloudfront.net/df39169e-2211-4cd2-8dfd-add90778b5b1chris-circle-500.png",
-      "lastLogin": "2017-08-17T18:58:45"
-    },
-    "account":
-    {
-      "id": 19,
-      "name": "Volute",
-      "lrsDashboardId": null
-    },
-    "cohort": ""
-  },
-  "isCompletable": false,
-  "rootPath": "volute-app-assessment",
-  "display-preferences":
-  {
-    "display-name": "Assessments"
-  },
-  "keywords": ["web-components", "volute-app", "volute-application"],
-  "categories": [
-  {
-    "id": 2,
-    "name": "Content Management"
-  }],
-  "appUUID": null,
-  "author": null,
-  "purchased": true
+  "name": "Network",
+  "description": "Learn how to build your professional network with this powerful tool by renowned professor at Columbia Business School, Dr. William Duggan.",
+  "author": "William Duggan, Columbia Business School",
+  "developers": ["William Duggan, Volute<sup>&reg;<\/sup>"],
+  "category": ["network", "networking"],
+  "release": "12-2017",
+  "version": "1.0",
+  "related": ["Video"]
 }]

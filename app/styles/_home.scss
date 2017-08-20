@@ -132,19 +132,24 @@ li.tool {
     p {
       color: #cbcbcb;
     }
+
+    @media (max-width: $iPadPro) {
+      height: 120px;
+    }
   }
 }
 
 // Tool expand infobox
 .tool--infobox {
-  width: 100vw;
+  width: 100%;
   background-color: $gray;
   transition: all $transition ease-in-out 0s;
   height: 0;
   overflow: hidden;
 
   &__active {
-    height: 550px;
+    height: auto;
+    min-height: 550px;
 
     .tool--infobox-slider {
       &:after {
@@ -153,38 +158,40 @@ li.tool {
     }
 
     .tool--infobox-slider--item {
-      height: 550px;
-    }
-
-    @media (max-width: $xxl) {
-      height: 650px;
-
-      .tool--infobox-slider--item {
-        height: 650px;
-      }
-    }
-
-    @media (max-width: $iPadPro) {
-      height: 700px;
-
-      .tool--infobox-slider--item {
-        height: 700px;
-      }
+      min-height: 800px;
     }
   }
 
   &-metadata {
-    padding-left: 45px;
-    padding-top: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
     font-size: 18px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    z-index: 2;
 
     strong {
       color: $pricing;
     }
 
+    ul {
+      list-style-type: circle;
+      padding-left: 30px;
+    }
+
     i.fa {
       font-size: 36px;
       color: $pricing;
+    }
+
+    @media (max-width: $iPadPro) {
+      width: 66.666667%;
+      max-width: 66.666667%;
+    }
+
+    @media (max-width: $md) {
+      width: 83.333333%;
+      max-width: 83.333333%;
     }
   }
 
@@ -204,6 +211,14 @@ li.tool {
   }
 }
 
+.tool--infobox-slider-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+}
+
 .tool--infobox-slider {
   width: 100%;
   height: 100%;
@@ -213,7 +228,7 @@ li.tool {
     content: " ";
     display: block;
     width: 100%;
-    height: 100%;
+    height: 101%;
     position: absolute;
     left: -1px;
     top: 0;
@@ -222,8 +237,8 @@ li.tool {
   }
 
   &:before {
-    background: linear-gradient(to right, rgba(20,20,20,1) 10%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(20,20,20,1) 10%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(20,20,20,1) 15%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(20,20,20,1) 15%, rgba(0,0,0,0) 100%);
   }
 
   &:after {
