@@ -52,12 +52,16 @@ jQuery(document).ready(function($) {
 				id = $(this).data('id'),
 				$currentRow = $('#' + url);
 
-		$(this).parents().eq(2).find('.tool--infobox').addClass('tool--infobox__active');
-		$(this).removeClass('tool__not-selected').addClass('tool__selected');
-		$(this).siblings().removeClass('tool__selected').addClass('tool__not-selected');
+		if (viewportWidth > 768) {
+			$(this).parents().eq(2).find('.tool--infobox').addClass('tool--infobox__active');
+			$(this).removeClass('tool__not-selected').addClass('tool__selected');
+			$(this).siblings().removeClass('tool__selected').addClass('tool__not-selected');
+		}
+
+		// scroll to view
 		if (viewportWidth > 1024) {
 			$('html, body').animate({ scrollTop: $('#' + url + ' .tool--infobox-slider-wrapper').offset().top - 90 }, 'slow');
-		} else if (viewportWidth = 1024) {
+		} else if (viewportWidth > 768 && viewportWidth == 1024) {
 			$('html, body').animate({ scrollTop: $('#' + url + ' .tool--infobox-slider-wrapper').offset().top - 120 }, 'slow');
 		}
 
@@ -77,7 +81,7 @@ jQuery(document).ready(function($) {
 						'<strong>Version:</strong> ' + toolData.version + ' <br>';
 
 			if (typeof toolData.related != 'undefined' && toolData.related.length > 0) {
-				metadata += '<strong>Related:</strong> ' + toolData.related.join(', ') + ' <br>';
+				metadata += '<strong><i class="fa fa-puzzle-piece" aria-hidden="true"></i>:</strong> ' + toolData.related.join(', ') + ' <br>';
 			}
 
 			metadata += '<strong>Responsive:</strong>&nbsp;' +

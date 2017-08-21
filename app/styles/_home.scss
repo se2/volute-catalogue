@@ -28,9 +28,15 @@
   }
 }
 
-.tools-category {
-  padding-left: 15px;
-  padding-top: 40px;
+@media (max-width: 375px) {
+  .tools-wrapper {
+    margin: 0 5px;
+
+    .tools-row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 a.tools-link {
@@ -52,6 +58,10 @@ a.tools-link {
 // Tools
 .tools-row {
   margin-top: 50px;
+
+  @media (max-width: $md) {
+    margin-top: 0;
+  }
 }
 
 li.tool {
@@ -76,17 +86,19 @@ li.tool {
       transition: border $transition;
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid $pricing;
+    @media (min-width: $md + 1px) {
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $pricing;
+      }
     }
   }
 
@@ -110,6 +122,11 @@ li.tool {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center 20%;
+
+    @media (max-width: $md) {
+      height: 0;
+      padding-bottom: 100%;
+    }
   }
 
   .tool--details {
@@ -136,6 +153,31 @@ li.tool {
     @media (max-width: $iPadPro) {
       height: 120px;
     }
+
+    @media (max-width: $md) {
+      height: 90px;
+    }
+  }
+
+  @media (max-width: $iPadPro) {
+    height: 270px;
+  }
+
+  @media (max-width: $md) {
+    width: 33.333333%;
+    max-width: 33.333333%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $md) {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  @media (max-width: 375px) {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -208,6 +250,10 @@ li.tool {
     i.fa {
       font-size: 58px;
     }
+  }
+
+  @media (max-width: $md) {
+    display: none;
   }
 }
 
