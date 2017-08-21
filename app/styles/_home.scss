@@ -142,6 +142,14 @@ li.tool {
     background-color: rgba(228,228,228,.75);
     color: $gray;
 
+    strong {
+      font-size: 18px;
+    }
+
+    span.tool--author {
+      font-size: 16px;
+    }
+
     p,
     span {
       display: block;
@@ -215,6 +223,7 @@ li.tool {
     padding-bottom: 15px;
     padding-right: 0;
     z-index: 2;
+    color: #fff;
 
     strong {
       color: $pricing;
@@ -285,7 +294,11 @@ li.tool {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1000;
+    z-index: 9999;
+
+    p {
+      color: #fff;
+    }
 
     &__active {
       display: block;

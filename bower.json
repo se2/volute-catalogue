@@ -9,7 +9,8 @@
     "font-awesome": "fontawesome#^4.7.0",
     "animate.css": "^3.5.2",
     "smoothscroll": "^0.3.6",
-    "font-awesome-animation": "^0.0.10"
+    "font-awesome-animation": "^0.0.10",
+    "jquery-ui": "^1.12.1"
   },
   "devDependencies": {
     "chai": "^4.1.1",
