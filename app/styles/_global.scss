@@ -6,7 +6,7 @@
 
 body,
 html {
-  background-color: $black;
+  background-color: $pricing-best;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +33,18 @@ a {
   &:hover {
     color: #8896b4;
     text-decoration: none;
+  }
+}
+
+h1 {
+  @media (max-width: $sm) {
+    font-size: 30px;
+  }
+}
+
+p {
+  @media (max-width: $sm) {
+    font-size: 14px;
   }
 }
 

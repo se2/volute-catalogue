@@ -28,8 +28,11 @@
   }
 }
 
-@media (max-width: 375px) {
-  .tools-wrapper {
+.tools-wrapper {
+  position: relative;
+  z-index: 100;
+
+  @media (max-width: 375px) {
     margin: 0 5px;
 
     .tools-row {
@@ -135,9 +138,7 @@ li.tool {
     left: 0;
     position: absolute;
     width: 100%;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
     background-color: rgba(228,228,228,.75);
     color: $gray;
 
@@ -170,7 +171,7 @@ li.tool {
     margin-bottom: 5px;
   }
 
-  @media (max-width: $md) {
+  @media (max-width: $md - 1px) {
     width: 50%;
     max-width: 50%;
   }
@@ -184,18 +185,21 @@ li.tool {
 // Tool expand infobox
 .tool--infobox {
   width: 100%;
-  background-color: $gray;
+  background-color: $pricing-best;
   transition: all $transition ease-in-out 0s;
   height: 0;
   overflow: hidden;
+  visibility: hidden;
 
   &__active {
     height: auto;
     min-height: 550px;
+    background-color: $black;
+    visibility: visible;
 
     .tool--infobox-slider {
       &:after {
-        background: rgba(20,20,20,.2);
+        background-color: rgba(20,20,20,.2);
       }
     }
 
@@ -214,6 +218,7 @@ li.tool {
 
     strong {
       color: $pricing;
+      font-weight: normal;
     }
 
     ul {
@@ -242,18 +247,91 @@ li.tool {
     right: 40px;
     top: 25px;
     z-index: 2;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $pricing;
+    align-items: center;
+    justify-content: center;
+    transition: all $transition;
 
-    &:hover {
-      color: $pricing;
+    svg,
+    path {
+      fill: white;
     }
 
-    i.fa {
-      font-size: 58px;
+    svg {
+      width: 24px;
+    }
+    @media (min-width: $md + 1px) {
+      &:hover {
+        background-color: $pricing-best;
+      }
     }
   }
 
   @media (max-width: $md) {
     display: none;
+  }
+
+  &__mobile {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+
+    &__active {
+      display: block;
+    }
+
+    &--inner {
+      background-color: $pricing-best;
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 5px;
+      overflow: scroll;
+    }
+
+    .tool--infobox-close {
+      right: 15px;
+      top: 15px;
+    }
+
+    .tool--infobox-slider__mobile {
+      .tool--infobox-slider__mobile--item {
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+
+        @media (max-width: $sm) {
+          height: 150px;
+        }
+      }
+    }
+
+    .tool--infobox-metadata {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      padding-right: 30px;
+
+      @media (max-width: $sm) {
+        padding: 15px;
+      }
+    }
   }
 }
 
@@ -283,12 +361,12 @@ li.tool {
   }
 
   &:before {
-    background: linear-gradient(to right, rgba(20,20,20,1) 15%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(20,20,20,1) 15%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, $black 15%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, $black 15%, rgba(0,0,0,0) 100%);
   }
 
   &:after {
-   background: rgba(20,20,20,1);
+    background-color: $pricing-best;
   }
 
   &--item {
