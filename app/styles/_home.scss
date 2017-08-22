@@ -1,8 +1,12 @@
 @import 'var';
 
 .catalog {
-  .container-fluid {
-    padding-bottom: 50px;
+  .content-wrap {
+    padding-bottom: 0;
+  }
+
+  p.lead {
+    font-size: 18px;
   }
 }
 
@@ -71,7 +75,7 @@ li.tool {
   float: left;
   height: 300px;
   padding: 0 2px;
-  transition: all $transition ease-in-out 0s;
+  transition-duration: $transition;
   cursor: pointer;
   z-index: 999;
   position: relative;
@@ -142,9 +146,14 @@ li.tool {
     background-color: rgba(228,228,228,.75);
     color: $gray;
 
+    strong {
+      font-size: 18px;
+    }
+
     p,
     span {
       display: block;
+      font-size: 16px;
     }
 
     p {
@@ -199,12 +208,13 @@ li.tool {
 
     .tool--infobox-slider {
       &:after {
-        background-color: rgba(20,20,20,.2);
+        // background-color: rgba(20,20,20,.2);
+        background-color: transparent;
       }
     }
 
     .tool--infobox-slider--item {
-      min-height: 800px;
+      min-height: 550px;
     }
   }
 
@@ -213,7 +223,6 @@ li.tool {
     padding-top: 30px;
     font-size: 18px;
     padding-bottom: 15px;
-    padding-right: 0;
     z-index: 2;
 
     strong {
@@ -232,14 +241,15 @@ li.tool {
     }
 
     @media (max-width: $iPadPro) {
-      width: 66.666667%;
-      max-width: 66.666667%;
+      width: 100%;
+      max-width: 100%;
+      padding-right: 30px;
     }
 
-    @media (max-width: $md) {
-      width: 83.333333%;
-      max-width: 83.333333%;
-    }
+    // @media (max-width: $md) {
+    //   width: 83.333333%;
+    //   max-width: 83.333333%;
+    // }
   }
 
   &-close {
@@ -285,7 +295,7 @@ li.tool {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1000;
+    z-index: 9999;
 
     &__active {
       display: block;
@@ -314,10 +324,12 @@ li.tool {
       .tool--infobox-slider__mobile--item {
         width: 100%;
         height: 350px;
-        background-size: cover;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
 
         @media (max-width: $sm) {
-          height: 150px;
+          height: 250px;
         }
       }
     }
@@ -333,14 +345,6 @@ li.tool {
       }
     }
   }
-}
-
-.tool--infobox-slider-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100%;
 }
 
 .tool--infobox-slider {
@@ -361,8 +365,8 @@ li.tool {
   }
 
   &:before {
-    background: linear-gradient(to right, $black 15%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(left, $black 15%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, $black 5%, rgba(0,0,0,0) 50%);
+    background: -webkit-linear-gradient(left, $black 5%, rgba(0,0,0,0) 50%);
   }
 
   &:after {
@@ -371,14 +375,18 @@ li.tool {
 
   &--item {
     width: 100%;
-    height: 0;
-    transition: height $transition ease-in-out 0s;
+    height: 100%;
+    transition: all $transition ease-in-out 0s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
 
-    &-inner {
+  @media (max-width: $iPadPro) {
+    &-wrapper {
       width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
+      max-width: 100%;
+      margin-bottom: 25px;
     }
   }
 }

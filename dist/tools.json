@@ -5,7 +5,7 @@
   "description": "Drive excellence and performance outcomes by integrating the power of qualtrics<sup>&reg;<\/sup> with Assessments. Identify key competencies at strategic points throughout the learning journey and increase engagement, develop top performers and build strong teams. Seamlessly measure and connect insights across the participants learning journey and provide effective feedback.",
   "author": "qualtrics<sup>&reg;<\/sup>",
   "developers": ["qualtrics<sup>&reg;<\/sup>", "Volute<sup>&reg;<\/sup>"],
-  "category": ["schedule", "planning", "logistics", "itinerary"],
+  "category": ["assessment", "test", "survey", "poll"],
   "release": "6-2017",
   "version": "1.0",
   "format": [],

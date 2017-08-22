@@ -14,8 +14,7 @@ jQuery(document).ready(function($) {
 			$toolInfoBox = $('.tool--infobox'),
 			$scrollDown = $('.scroll-down');
 
-	// Tool slider
-	$toolSlider.slick({
+	var settings = {
 		autoplay: true,
 		infinite: true,
 		slidesToShow: 1,
@@ -24,8 +23,11 @@ jQuery(document).ready(function($) {
 		speed: speed,
 		autoplaySpeed: autoplaySpeed,
 		fade: true,
-		mobileFirst: true
-	});
+		mobileFirst: true,
+	};
+
+	// Tool slider
+	$toolSlider.slick(settings);
 
 	// Tool effect on hover
 	$toolsList.hover(
@@ -86,14 +88,17 @@ jQuery(document).ready(function($) {
 
 		// scroll to view
 		if (viewportWidth > 1024) {
-			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 90 - offsetHeight }, 1200);
+			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 90 - 60 - offsetHeight }, 1200);
 		} else if (viewportWidth > 768 && viewportWidth == 1024) {
-			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 120 - offsetHeight }, 1200);
+			// $('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 120 - 60 - offsetHeight }, 1200);
 		}
 
+		// offsetHeight = 0;
+
 		// get data
-		$.getJSON('tools.json', function(data) {
+		$.getJSON('catalog/app/tools.json', function(data) {
 			var toolData = data[id - 1],
+					images = '',
 					metadata =  '<strong>Author:</strong> ' + toolData.author + ' <br>' +
 											'<strong>Developers:</strong> ' + toolData.developers.join(', ') + ' <br>' +
 											'<strong>Category:</strong> ' + toolData.category.join(', ') + ' <br>' +
@@ -108,10 +113,23 @@ jQuery(document).ready(function($) {
 						  		'<i class="fa fa-tablet" aria-hidden="true"></i>&nbsp;&nbsp;' +
 						  		'<i class="fa fa-desktop" aria-hidden="true"></i> <br>';
 
+			// if (typeof toolData.screenshots != 'undefined' && toolData.screenshots.length > 0) {
+			// 	for (var i = 0; i < toolData.screenshots.length; i++) {
+			// 		images += '<div class="tool--infobox-slider--item" style="background-image:url(\'' + toolData.screenshots[i] + '\')"></div>';
+			// 	}
+			// }
+
 			if (viewportWidth > 768) {
+
+				// $toolSlider.slick('unslick');
+
 				$currentRow.find('.tool--infobox-metadata h1 strong').html(toolData.name);
 				$currentRow.find('.tool--infobox-metadata p.tool--description').html(toolData.description);
 				$currentRow.find('.tool--infobox-metadata p.tool--metadata').html(metadata);
+				// $currentRow.find('.tool--infobox-slider').html(images);
+
+				// $toolSlider.slick(settings);
+
 			} else {
 				var $popupMobile = $('.tool--infobox__mobile');
 				$popupMobile.find('.tool--infobox-metadata h1 strong').html(toolData.name);
@@ -139,4 +157,39 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 'slow');
 	});
+
+	// quick search regex
+	var qsRegex;
+
+	// init Isotope
+	var $grid = $('#row-1 .grid').isotope({
+	  itemSelector: '.grid-item',
+	  layoutMode: 'fitRows',
+	  filter: function() {
+	    return qsRegex ? $(this).text().match(qsRegex) : true;
+	  }
+	});
+
+	// use value of search field to filter
+	var $quicksearch = $('.search-field').keyup(debounce(function() {
+	  qsRegex = new RegExp($quicksearch.val(), 'gi');
+	  $grid.isotope();
+	}, 200));
+
+	// debounce so filtering doesn't happen every millisecond
+	function debounce(fn, threshold) {
+	  var timeout;
+	  return function debounced() {
+	    if (timeout) {
+	      clearTimeout(timeout);
+	    }
+
+	    function delayed() {
+	      fn();
+	      timeout = null;
+	    }
+	    timeout = setTimeout(delayed, threshold || 100);
+	  }
+	}
+
 });
