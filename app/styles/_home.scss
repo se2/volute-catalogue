@@ -150,6 +150,10 @@ li.tool {
       font-size: 18px;
     }
 
+    span.tool--author {
+      font-size: 16px;
+    }
+
     p,
     span {
       display: block;
@@ -224,6 +228,7 @@ li.tool {
     font-size: 18px;
     padding-bottom: 15px;
     z-index: 2;
+    color: #fff;
 
     strong {
       color: $pricing;
@@ -296,6 +301,13 @@ li.tool {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 9999;
+<<<<<<< HEAD
+=======
+
+    p {
+      color: #fff;
+    }
+>>>>>>> b61fa87b1f11fb376a11359583e6d78c11179911
 
     &__active {
       display: block;

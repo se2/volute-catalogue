@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
 		if (viewportWidth > 1024) {
 			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 90 - 60 - offsetHeight }, 1200);
 		} else if (viewportWidth > 768 && viewportWidth == 1024) {
-			// $('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 120 - 60 - offsetHeight }, 1200);
+			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox-slider-wrapper').offset().top - 120 - 60 - offsetHeight }, 1200);
 		}
 
 		// offsetHeight = 0;
