@@ -200,25 +200,21 @@ li.tool {
   width: 100%;
   background-color: $pricing-best;
   transition: all $transition ease-in-out 0s;
-  height: 0;
+  // height: 0;
+  max-height: 0;
   overflow: hidden;
   visibility: hidden;
 
   &__active {
     height: auto;
-    min-height: 550px;
+    max-height: 2000px;
     background-color: $black;
     visibility: visible;
 
     .tool--infobox-slider {
       &:after {
-        // background-color: rgba(20,20,20,.2);
         background-color: transparent;
       }
-    }
-
-    .tool--infobox-slider--item {
-      min-height: 550px;
     }
   }
 
@@ -233,6 +229,8 @@ li.tool {
     strong {
       color: $pricing;
       font-weight: normal;
+      display: inline-block;
+      margin-bottom: 10px;
     }
 
     ul {
@@ -250,18 +248,13 @@ li.tool {
       max-width: 100%;
       padding-right: 30px;
     }
-
-    // @media (max-width: $md) {
-    //   width: 83.333333%;
-    //   max-width: 83.333333%;
-    // }
   }
 
   &-close {
     position: absolute;
     right: 40px;
     top: 25px;
-    z-index: 2;
+    z-index: 999;
     display: flex;
     width: 40px;
     height: 40px;
@@ -359,6 +352,7 @@ li.tool {
 .tool--infobox-slider {
   width: 100%;
   height: 100%;
+  position: relative;
 
   &:before,
   &:after {
@@ -389,6 +383,15 @@ li.tool {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    &.tool--infobox-slider--item__current {
+      opacity: 1;
+      position: relative;
+    }
   }
 
   @media (max-width: $iPadPro) {
@@ -425,3 +428,32 @@ li.tool {
     }
   }
 }
+
+/* Isotope transition duration */
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: $transition;
+  -moz-transition-duration: $transition;
+  -ms-transition-duration: $transition;
+  -o-transition-duration: $transition;
+  transition-duration: $transition;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
