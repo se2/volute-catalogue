@@ -16,7 +16,7 @@
   overflow: hidden;
   background-color: #f9f9f9;
   margin-top: 50px;
-  padding: 0 45px;
+  padding: 45px;
 
   &--features {
     background-color: transparent;
@@ -31,9 +31,7 @@
 
     &-wrapper {
       height: auto;
-      min-height: 750px;
       position: relative;
-      // width: 90%;
       margin: 0 auto;
       padding-left: 75px !important;
       display: -webkit-flex;
@@ -141,7 +139,6 @@
   .tier-pay,
   .custom-pay {
     padding: 0;
-    cursor: pointer;
     transition: all $transition;
 
     @media (max-width: $iPadPro - 1px) {

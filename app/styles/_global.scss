@@ -13,8 +13,6 @@ html {
 }
 
 body {
-  // color: #fff;
-
   &.pricing {
     background-color: #fff;
   }
@@ -168,5 +166,15 @@ p {
   right: 0;
   margin: 0 auto;
   width: 100%;
+}
+
+.black-overlay:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(20,20,20,.5);
 }
 
