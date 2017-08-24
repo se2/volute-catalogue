@@ -16,7 +16,7 @@
   overflow: hidden;
   background-color: #f9f9f9;
   margin-top: 50px;
-  padding: 45px;
+  padding: 75px 45px;
 
   &--features {
     background-color: transparent;
@@ -40,6 +40,10 @@
       display: -o-flex;
       display: flex;
       align-items: center;
+
+      @media (max-width: $iPadPro) {
+        padding-left: 30px !important;
+      }
 
       @media (max-width: $md) {
         padding-left: 0 !important;
@@ -186,6 +190,18 @@
     .title {
       background: $pricing-best;
     }
+  }
+
+  @media (max-width: $iPadPro) {
+    padding: 55px 30px;
+  }
+
+  @media (max-width: $iPadPro) {
+    padding: 55px 45px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 55px 30px;
   }
 }
 

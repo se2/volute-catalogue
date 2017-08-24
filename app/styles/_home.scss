@@ -151,7 +151,7 @@ li.tool {
     }
 
     span.tool--author {
-      font-size: 16px;
+      font-size: 15px;
     }
 
     p,
@@ -164,12 +164,24 @@ li.tool {
       color: #cbcbcb;
     }
 
+    @media (max-width: $xxl - 1px) {
+      height: 110px;
+    }
+
     @media (max-width: $iPadPro) {
       height: 120px;
+
+      span.tool--author {
+        font-size: 14px;
+      }
     }
 
     @media (max-width: $md) {
       height: 90px;
+    }
+
+    @media (max-width: $sm) {
+      padding: 5px;
     }
   }
 
@@ -322,8 +334,8 @@ li.tool {
       top: 15px;
     }
 
-    .tool--infobox-slider__mobile {
-      .tool--infobox-slider__mobile--item {
+    .tool--infobox-slider {
+      .tool--infobox-slider--item {
         width: 100%;
         height: 350px;
         background-size: contain;
@@ -331,8 +343,14 @@ li.tool {
         background-repeat: no-repeat;
 
         @media (max-width: $sm) {
-          height: 250px;
+          height: 200px;
         }
+      }
+
+      &:before,
+      &:after {
+        content: none;
+        background-color: transparent;
       }
     }
 
@@ -368,8 +386,8 @@ li.tool {
   }
 
   &:before {
-    background: linear-gradient(to right, $black 5%, rgba(0,0,0,0) 50%);
-    background: -webkit-linear-gradient(left, $black 5%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(to right, $black 0%, rgba(0,0,0,0) 40%);
+    background: -webkit-linear-gradient(left, $black 0%, rgba(0,0,0,0) 40%);
   }
 
   &:after {
@@ -457,3 +475,13 @@ li.tool {
   transition-property: transform, opacity;
 }
 
+.arrow-down {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}

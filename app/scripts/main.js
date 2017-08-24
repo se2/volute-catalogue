@@ -63,8 +63,6 @@ jQuery(document).ready(function($) {
 			}
 		}
 
-		console.log(offsetHeight);
-
 		// scroll to view
 		if (viewportWidth > 1024) {
 			$('html, body').animate({ scrollTop: $('#row-' + url + ' .tool--infobox').offset().top - 90 - 60 - offsetHeight }, 1200);
@@ -83,20 +81,20 @@ jQuery(document).ready(function($) {
 		} else {
 			$('.tool--infobox__mobile').addClass('tool--infobox__mobile__active');
 			// Tool mobile slider
-			$toolSliderMobile.not('.slick-initialized').slick(settings);
+			// $toolSliderMobile.not('.slick-initialized').slick(settings);
 		}
 
 		// get data
-		var toolData = toolsData[id - 1],
+		var toolData = _.filter(toolsData, function(o) { return (o.id == parseInt(id)); })[0],
 				images = '',
 				metadata =  '<strong>Author:</strong> ' + toolData.author + ' <br>' +
-										'<strong>Developers:</strong> ' + toolData.developers.join(', ') + ' <br>' +
-										'<strong>Category:</strong> ' + toolData.category.join(', ') + ' <br>' +
+										'<strong>Developer(s):</strong> ' + toolData.developers.join(', ') + ' <br>' +
+										'<strong>Tags:</strong> ' + toolData.category.join(', ') + ' <br>' +
 										'<strong>Release:</strong> ' + toolData.release + ' <br>' +
 										'<strong>Version:</strong> ' + toolData.version + ' <br>';
 
 		if (typeof toolData.related != 'undefined' && toolData.related.length > 0) {
-			metadata += '<strong><i class="fa fa-puzzle-piece" aria-hidden="true"></i>:</strong> ' + toolData.related.join(', ') + ' <br>';
+			metadata += '<strong><i class="fa fa-puzzle-piece" aria-hidden="true"></i></strong> ' + toolData.related.join(', ') + ' <br>';
 		}
 
 		metadata += '<i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp;' +
@@ -106,7 +104,7 @@ jQuery(document).ready(function($) {
 		if (typeof toolData.screenshots != 'undefined' && toolData.screenshots.length > 0) {
 			for (var i = 0; i < toolData.screenshots.length; i++) {
 				var current = (i == 0) ? 'tool--infobox-slider--item__current' : '';
-				images += '<div class="tool--infobox-slider--item ' + current + '" style="background-image:url(\'' + 'images/tools/screenshots/' + toolData.screenshots[i] + '\')"></div>';
+				images += '<div class="tool--infobox-slider--item ' + current + '" style="background-image:url(\'' + '../images/tools/screenshots/' + toolData.screenshots[i] + '\')"></div>';
 			}
 		}
 
