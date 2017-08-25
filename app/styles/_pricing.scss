@@ -33,13 +33,21 @@
       height: auto;
       position: relative;
       margin: 0 auto;
-      padding-left: 75px !important;
+      padding-left: 150px !important;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
       display: flex;
       align-items: center;
+
+      @media (max-width: $xxl - 1px) {
+        padding-left: 75px !important;
+      }
+
+      @media (max-width: 1280px) {
+        padding-left: 50px !important;
+      }
 
       @media (max-width: $iPadPro) {
         padding-left: 30px !important;
@@ -363,3 +371,13 @@
     top: 0;
   }
 }
+
+.pricing--table-wrapper,
+.pricing--features-wrapper {
+  @media (max-width: $iPadPro) {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+

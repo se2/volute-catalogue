@@ -175,7 +175,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(20,20,20,.5);
+  background-color: rgba(20,20,20,.75);
 }
 
 .white-overlay:after {
@@ -188,3 +188,59 @@ p {
   background-color: rgba(255,255,255,.75);
 }
 
+.trial-button {
+  background-color: $orange;
+  border: 5px solid $orange;
+  color: white !important;
+  font-size: 25px;
+  letter-spacing: 0;
+  padding: 10px 20px;
+  height: auto;
+  border-radius: 5px;
+  transition: all $transition;
+
+  &:hover {
+    background-color: transparent;
+    color: $orange !important;
+    border-color: $orange;
+  }
+}
+
+#primary-menu ul li>a.menu-trial-button {
+  padding: 30px 0;
+
+  .button {
+    background-color: $orange;
+    color: white;
+    border-color: $orange;
+
+    &:hover {
+      background-color: transparent;
+      color: $orange !important;
+      border-color: $orange !important;
+    }
+  }
+}
+
+#header.sticky-header:not(.static-sticky) #primary-menu>ul>li>a.menu-trial-button {
+  padding: 10px 0;
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+
+  @media (max-width: $sm) {
+    font-size: 18px;
+
+    i.fa {
+      font-size: 50px !important;
+    }
+  }
+}
