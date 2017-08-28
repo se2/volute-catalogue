@@ -2,7 +2,6 @@ jQuery(document).ready(function($) {
 	// Global variables
 	var speed = 1200,
 			autoplaySpeed = 4000,
-			// offsetHeight = 0,
 			viewportWidth = $(window).width(),
 			viewportHeight = $(window).height();
 
@@ -13,21 +12,6 @@ jQuery(document).ready(function($) {
 			$toolsList = $('ul.tools'),
 			$toolSingle = $('li.tool'),
 			$toolInfoBox = $('.tool--infobox');
-
-	var settings = {
-		autoplay: true,
-		infinite: true,
-		slidesToShow: 1,
-		dots: false,
-		arrows: false,
-		speed: speed,
-		autoplaySpeed: autoplaySpeed,
-		fade: true,
-		mobileFirst: true,
-	};
-
-	// Tool slider
-	// $toolSlider.slick(settings);
 
 	// Tool effect on hover
 	$toolsList.hover(
@@ -80,8 +64,6 @@ jQuery(document).ready(function($) {
 
 		} else {
 			$('.tool--infobox__mobile').addClass('tool--infobox__mobile__active');
-			// Tool mobile slider
-			// $toolSliderMobile.not('.slick-initialized').slick(settings);
 		}
 
 		// get data
@@ -116,7 +98,6 @@ jQuery(document).ready(function($) {
       var height = $currentRow.find('.tool--infobox-metadata').outerHeight();
 
       $currentRow.find('.tool--infobox-slider-wrapper').height(height);
-      // $currentRow.find('.tool--infobox-slider').slick(settings);
     } else {
       var $popupMobile = $('.tool--infobox__mobile');
       $popupMobile.find('.tool--infobox-metadata h1 strong').html(toolData.name);
@@ -173,13 +154,5 @@ jQuery(document).ready(function($) {
 	    timeout = setTimeout(delayed, threshold || 100);
 	  }
 	}
-
-	// $('.pricing-select').bind('click', function() {
-	// 	$('.pricing-select').removeClass('pricing-select__active');
-	// 	$(this).addClass('pricing-select__active');
-
-	// 	$('.pricing--features').removeClass('pricing--features__active');
-	// 	$('#' + $(this).data('id')).addClass('pricing--features__active');
-	// });
 
 });

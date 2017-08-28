@@ -317,8 +317,8 @@ li.tool {
 
     &--inner {
       background-color: $pricing-best;
-      width: 95%;
-      height: 95%;
+      width: 98%;
+      height: 98%;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -417,6 +417,12 @@ li.tool {
       width: 100%;
       max-width: 100%;
       margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    &-wrapper {
+      margin-bottom: 0;
     }
   }
 }
